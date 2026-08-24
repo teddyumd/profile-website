@@ -20,3 +20,6 @@ src/app/dev/
 # working instruction files (remove these lines if you want them in the repo)
 system-prompt.md
 qa-qc-prompt.md
+
+# scratch: files device tooling could not delete
+_to_delete/
