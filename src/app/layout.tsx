@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { site } from "@/content/site";
-import { absoluteUrl } from "@/lib/siteUrl";
+import { absoluteUrl, getSiteOrigin } from "@/lib/siteUrl";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -19,7 +19,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(getSiteOrigin()),
   alternates: {
     canonical: absoluteUrl("/"),
   },

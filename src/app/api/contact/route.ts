@@ -44,9 +44,11 @@ export async function POST(request: Request) {
     return Response.json({ fieldErrors }, { status: 422 });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL ?? site.email;
-  const from = process.env.CONTACT_FROM_EMAIL ?? "onboarding@resend.dev";
+  // Truthiness, not `??`: a variable set to an empty string in a hosting
+  // dashboard exists but is useless, and must fall back like an unset one.
+  const apiKey = process.env.RESEND_API_KEY?.trim();
+  const to = process.env.CONTACT_TO_EMAIL?.trim() || site.email;
+  const from = process.env.CONTACT_FROM_EMAIL?.trim() || "onboarding@resend.dev";
 
   if (!apiKey) {
     console.error("RESEND_API_KEY is not set — contact form cannot send.");
