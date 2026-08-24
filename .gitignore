@@ -1,0 +1,22 @@
+node_modules
+.next
+out
+dist
+*.log
+*.tsbuildinfo
+.env
+.env*
+!.env.example
+Thumbs.db
+.DS_Store
+
+# --- deploy hygiene ---
+_backup_before_edits/
+*.tgz
+
+# local-only style guide route: keep it on disk, never ship it
+src/app/dev/
+
+# working instruction files (remove these lines if you want them in the repo)
+system-prompt.md
+qa-qc-prompt.md
