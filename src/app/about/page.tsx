@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 };
 
 const credentials = [
-  "Master of Science, Geospatial Information Sciences - University of Maryland, College Park",
-  "Bachelor of Science, Environmental Science - University of Maryland, College Park",
+  "Master of Science, Geospatial Information Sciences \u2014 University of Maryland, College Park",
+  "Bachelor of Science, Environmental Science \u2014 University of Maryland, College Park",
   "Certified GIS Professional (GISP)",
   "Languages: English and Amharic",
   "Based in Addis Ababa, Ethiopia",

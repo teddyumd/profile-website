@@ -36,7 +36,7 @@ export default function Image() {
             {site.name}
           </div>
           <div style={{ color: "#263238", fontSize: 40, marginTop: 24 }}>
-            Public-Sector Transformation & Digital Systems Leader
+            Transforming Public Systems Through Data, Digital Technology & Geospatial Intelligence
           </div>
         </div>
         <div style={{ color: "#5D676B", fontSize: 28 }}>

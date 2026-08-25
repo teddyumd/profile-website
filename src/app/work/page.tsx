@@ -20,12 +20,12 @@ export default function WorkPage() {
           <h1>Featuring Selected Work</h1>
           <div className="hero-story">
             <p>
-              Below is a selection of the work I was proud of and I hope it will
+              Below is a selection of the work I was proud of, and I hope it will
               give you the clearest picture I can give of the problems I take
               on, the scale I work at, and what I bring to them.
             </p>
             <p>
-              They span four very different settings; a national health
+              They span four very different settings: a national health
               network, an electric utility, a mapping company I built from
               scratch, and a county inspection unit. On the surface, they look
               completely unrelated. In

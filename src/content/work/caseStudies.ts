@@ -8,13 +8,13 @@ export const caseStudies: CaseStudy[] = [
     title: "Strengthening Ethiopia\u2019s National Digital Health Information Systems & Architecture",
     metaTitle: "Ethiopia\u2019s National Digital Health Architecture",
     metaDescription:
-      "Technical oversight lead for USAID\u2019s $63M Digital Health Activity in Ethiopia, covering systems architecture, interoperability, and institutional ownership.",
+      "Senior digital health lead for USAID\u2019s $63M Digital Health Activity in Ethiopia, covering systems architecture, interoperability, and institutional ownership.",
     summary:
-      "As Senior Digital Health Advisor at USAID/Ethiopia, I served as the senior adviser and principal technical oversight lead for USAID\u2019s approximately $63 million Digital Health Activity, one of the country\u2019s major donor-supported investments in national digital-health systems. My responsibility was considerably broader than providing technical advice on individual software platforms.",
+      "As Senior Digital Health Advisor at USAID/Ethiopia, I served as the senior adviser and senior digital health lead for USAID\u2019s approximately $63 million Digital Health Activity, one of the country\u2019s major donor-supported investments in national digital-health systems. My responsibility was considerably broader than providing technical advice on individual software platforms.",
     deck:
       "Directing investment strategy, procurement review, and technical governance for Ethiopia's primary national digital health portfolio \u2014 and the enterprise architecture connecting it.",
     context:
-      "At USAID/Ethiopia, I served as Senior Digital Health Advisor and principal technical oversight lead for an approximately $63 million Digital Health Activity spanning multiple national systems and institutional actors.",
+      "At USAID/Ethiopia, I served as Senior Digital Health Advisor and senior digital health lead for an approximately $63 million Digital Health Activity spanning multiple national systems and institutional actors.",
     approach:
       "I connected program strategy, investment decisions, procurement, performance, data governance, interoperability, risk, and sustainability while translating between government, donor, partner, vendor, and technical perspectives.",
     enabled:
@@ -36,7 +36,7 @@ export const caseStudies: CaseStudy[] = [
       "Deploying digital health tools without institutional alignment creates fragmented systems and unsustainable tech debt. Transforming public health at a national scale requires unifying government policy, multi-donor funding, interoperable data architectures, and frontline digital literacy \u2014 which means multiple platforms, institutions, implementing partners, vendors, budgets, and operating models all have to move in the same direction.",
     roleHeading: "My role",
     roleDescription:
-      "As Senior Digital Health Advisor at USAID/Ethiopia, I served as a senior adviser and principal technical oversight lead for the approximately $63 million Digital Health Activity. My role combined strategy, portfolio oversight, technical review, stakeholder engagement, procurement input, risk management, and executive decision support.",
+      "As Senior Digital Health Advisor at USAID/Ethiopia, I served as a senior adviser and senior digital health lead for the approximately $63 million Digital Health Activity. My role combined strategy, portfolio oversight, technical review, stakeholder engagement, procurement input, risk management, and executive decision support.",
     contributions: [
       "reviewed annual work plans and budgets",
       "assessed partner performance and implementation risks",

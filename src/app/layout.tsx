@@ -50,7 +50,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "Person",
     name: site.name,
-    jobTitle: site.title,
+    // schema.org expects an actual role here, not a positioning line —
+    // site.title is now a tagline, so this is kept separate on purpose.
+    jobTitle: "Senior GIS Engineer",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Addis Ababa",

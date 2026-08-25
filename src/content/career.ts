@@ -36,7 +36,7 @@ export const career: CareerEntry[] = [
     scope: "Health Office, then Program Office",
     location: "Addis Ababa, Ethiopia",
     description:
-      "Served as senior adviser and principal technical oversight lead for a national Digital Health Activity, covering strategy, budgets, procurement, performance, risk, interoperability, and sustainability. Earlier in the posting, as GIS & Knowledge Management Specialist, advised Mission leadership on enterprise GIS, spatial analytics, and information governance across health, humanitarian, and resilience programming.",
+      "Served as senior adviser and senior digital health lead for a national Digital Health Activity, covering strategy, budgets, procurement, performance, risk, interoperability, and sustainability. Earlier in the posting, as GIS & Knowledge Management Specialist, advised Mission leadership on enterprise GIS, spatial analytics, and information governance across health, humanitarian, and resilience programming.",
     highlights: [
       "Directed reviews of annual work plans, budgets, performance indicators, and procurement packages, converting findings into executive recommendations and investment decisions.",
       "Developed the monitoring framework for the Activity, including its theory of change, indicator set, and the baselines used to measure performance.",

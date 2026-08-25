@@ -13,7 +13,7 @@ export function DigitalHealthNarrative() {
         </p>
         <p>
           At USAID/Ethiopia, I served as Senior Digital Health Advisor and
-          principal technical oversight lead for an approximately $63 million
+          senior digital health lead for an approximately $63 million
           Digital Health Activity. My responsibility was not to manage a single
           application. It was to help ensure that a large portfolio of
           digital-health investments remained technically credible, strategically

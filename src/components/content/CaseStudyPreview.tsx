@@ -36,7 +36,12 @@ export function CaseStudyPreview({
       </div>
       ) : null}
       <div className="case-preview-copy">
-        <p className="eyebrow">{study.label}</p>
+        {/* Banner replaces the removed imagery: gives each card a visual
+            anchor without needing photography that does not exist. */}
+        <div className="case-banner">
+          <p className="case-banner-label">{study.label}</p>
+          <p className="case-banner-number" aria-hidden="true">{study.number}</p>
+        </div>
         <Heading>{study.title}</Heading>
         <div className="case-preview-story">
           <div>

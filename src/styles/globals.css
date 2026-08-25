@@ -1730,3 +1730,327 @@ main {
   .career-period { color: #000 !important; }
   a[href]::after { content: ""; }
 }
+
+/* ---------------------------------------------------------------
+   Display treatments
+   Appended at the end of the file so these win on equal specificity
+   against the base rules above rather than silently losing to them.
+   --------------------------------------------------------------- */
+
+/* Credential pills — a fast credibility scan under the hero copy */
+.cred-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  list-style: none;
+  margin: var(--s4) 0 0;
+  padding: 0;
+}
+
+.cred-pills li {
+  border: 1px solid var(--slate-300);
+  border-radius: 999px;
+  color: var(--slate-600);
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: var(--s2) var(--s4);
+  white-space: nowrap;
+}
+
+/* Case-study card banner — visual anchor without needing image assets */
+.case-banner {
+  align-items: center;
+  background: linear-gradient(135deg, var(--ink-950) 0%, var(--teal-800) 100%);
+  border-radius: 6px;
+  color: var(--paper-50);
+  display: flex;
+  gap: var(--s4);
+  justify-content: space-between;
+  margin-bottom: var(--s5);
+  padding: var(--s5) var(--s6);
+}
+
+.case-banner .case-banner-label {
+  color: rgba(250, 249, 245, 0.92);
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.case-banner .case-banner-number {
+  color: rgba(250, 249, 245, 0.5);
+  font-size: var(--text-figure);
+  font-weight: 750;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Contact channels — one card per way of reaching me */
+.channel-grid {
+  display: grid;
+  gap: var(--s3);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  margin-top: var(--s4);
+}
+
+.channel-card {
+  border: 1px solid var(--slate-300);
+  border-radius: 8px;
+  color: var(--ink-950);
+  display: grid;
+  gap: var(--s1);
+  padding: var(--s4) var(--s5);
+  text-decoration: none;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.channel-card:hover {
+  background: var(--paper-100);
+  border-color: var(--teal-700);
+}
+
+.channel-card .channel-name {
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--teal-800);
+}
+
+.channel-card .channel-value {
+  color: var(--ink-800);
+  font-size: var(--text-sm);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .channel-card { transition: none; }
+}
+
+/* Geospatial practice — his Services + Skills pattern, on a dark band.
+   Sits inside .ink-surface, so text colours come from that context. */
+.gis-grid {
+  display: grid;
+  gap: var(--s4);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  margin-top: var(--s6);
+}
+
+.gis-card {
+  background: rgba(250, 249, 245, 0.045);
+  border: 1px solid rgba(250, 249, 245, 0.14);
+  border-radius: 10px;
+  display: grid;
+  gap: var(--s2);
+  padding: var(--s5);
+}
+
+.ink-surface .gis-card h3 {
+  color: var(--paper-50);
+}
+
+.ink-surface .gis-card p {
+  color: rgba(250, 249, 245, 0.76);
+  font-size: var(--text-sm);
+}
+
+/* The receipt for each claim above it */
+.ink-surface .gis-card .gis-evidence {
+  border-top: 1px solid rgba(250, 249, 245, 0.14);
+  color: #7fcdc8;
+  font-size: var(--text-2xs);
+  line-height: 1.45;
+  margin-top: var(--s2);
+  padding-top: var(--s3);
+}
+
+.stack-block {
+  border-top: 1px solid rgba(250, 249, 245, 0.16);
+  margin-top: var(--s7);
+  padding-top: var(--s6);
+}
+
+.stack-groups {
+  display: grid;
+  gap: var(--s5);
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  margin-top: var(--s5);
+}
+
+.ink-surface .stack-label {
+  color: #7fcdc8;
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  margin: 0 0 var(--s3);
+  text-transform: uppercase;
+}
+
+.stack-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stack-items li {
+  border: 1px solid rgba(250, 249, 245, 0.2);
+  border-radius: 999px;
+  color: rgba(250, 249, 245, 0.88);
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  padding: var(--s2) var(--s4);
+  white-space: nowrap;
+}
+
+/* WhatsApp channel card — brand green, and no plain-text number to harvest */
+.channel-card--whatsapp {
+  align-items: center;
+  background: #25d366;
+  border-color: #1da851;
+  display: flex;
+  gap: var(--s3);
+}
+
+.channel-card--whatsapp:hover {
+  background: #1da851;
+  border-color: #178c43;
+}
+
+.channel-card--whatsapp .channel-wa-mark {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  flex: none;
+}
+
+.channel-card--whatsapp .channel-name,
+.channel-card--whatsapp .channel-value {
+  color: #ffffff;
+}
+
+.channel-card--whatsapp .channel-value {
+  font-weight: 600;
+}
+
+/* Reading rail — where the reader is in the page.
+   Fixed rather than in-flow so the existing container grid is untouched;
+   only shown where there is room beside the 1180px content column. */
+.section-rail {
+  display: none;
+}
+
+@media (min-width: 1340px) {
+  .section-rail {
+    /* The rail is fixed, so it passes over both light and dark sections.
+       Its own panel keeps the text legible regardless of what is behind it. */
+    background: rgba(250, 249, 245, 0.92);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--slate-300);
+    border-radius: 10px;
+    display: grid;
+    gap: var(--s3);
+    grid-template-columns: 3px 1fr;
+    grid-template-areas:
+      "title title"
+      "track list"
+      "count count";
+    left: max(var(--s4), calc((100vw - var(--container)) / 2 - 218px));
+    max-width: 196px;
+    padding: var(--s4) var(--s4) var(--s3);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 40;
+  }
+}
+
+.section-rail-title {
+  color: var(--slate-600);
+  font-size: var(--text-3xs);
+  font-weight: 700;
+  grid-area: title;
+  letter-spacing: 0.11em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.section-rail-track {
+  background: var(--slate-300);
+  border-radius: 2px;
+  grid-area: track;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-rail-fill {
+  background: var(--teal-700);
+  display: block;
+  height: 100%;
+  transform-origin: top;
+  transition: transform 0.12s linear;
+  width: 100%;
+}
+
+.section-rail-list {
+  display: grid;
+  gap: var(--s2);
+  grid-area: list;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-rail-list a {
+  color: var(--slate-600);
+  display: block;
+  font-size: var(--text-3xs);
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: color 0.16s ease;
+}
+
+.section-rail-list a.is-reached {
+  color: var(--ink-800);
+}
+
+.section-rail-list a[aria-current="true"] {
+  color: var(--teal-700);
+  font-weight: 750;
+}
+
+.section-rail-list a:hover {
+  color: var(--teal-700);
+}
+
+.section-rail-count {
+  color: var(--slate-600);
+  font-size: var(--text-3xs);
+  font-variant-numeric: tabular-nums;
+  grid-area: count;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* The sticky header would otherwise cover the top of a jumped-to section */
+[id] {
+  scroll-margin-top: 96px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .section-rail-fill,
+  .section-rail-list a { transition: none; }
+}

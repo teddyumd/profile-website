@@ -15,22 +15,30 @@ h4 {
   color: var(--ink-950);
 }
 
-/* calm scale against 17px body text: 34 / 26 / 20 / 17 at desktop.
-   levels stay semantic (h1-h4) — only the visual weight comes down. */
+/* Display scale against 17px body text: 52 / 38 / 21 / 17 at desktop.
+   Headings carry the page; body copy stays calm. Levels remain semantic
+   (h1-h4) — only the visual weight changes. */
 h1 {
-  font-size: clamp(1.75rem, 2.5vw, 2.125rem);
-  line-height: 1.16;
+  font-size: clamp(2.25rem, 4.4vw, 3.25rem);
+  font-weight: 750;
+  letter-spacing: -0.022em;
+  line-height: 1.06;
+  text-wrap: balance;
 }
 
 h2 {
-  font-size: clamp(1.375rem, 1.8vw, 1.625rem);
-  line-height: 1.24;
+  font-size: clamp(1.75rem, 3vw, 2.375rem);
+  font-weight: 730;
+  letter-spacing: -0.018em;
+  line-height: 1.14;
+  text-wrap: balance;
 }
 
 h3 {
-  font-size: clamp(1.125rem, 1.35vw, 1.25rem);
+  font-size: clamp(1.15rem, 1.4vw, 1.3125rem);
   font-weight: 700;
-  line-height: 1.34;
+  letter-spacing: -0.008em;
+  line-height: 1.32;
 }
 
 h4 {

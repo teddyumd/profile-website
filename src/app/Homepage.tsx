@@ -4,6 +4,8 @@ import { CaseStudyPreview } from "@/components/content/CaseStudyPreview";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TextLink } from "@/components/ui/TextLink";
 import { site } from "@/content/site";
+import { SectionRail } from "@/components/layout/SectionRail";
+import { gisCapabilities, techStack } from "@/content/gis";
 import { caseStudies } from "@/content/work/caseStudies";
 
 const capabilityLead = [
@@ -17,8 +19,8 @@ const capabilities = [
     body: "I help teams cut through the noise and figure out what to digitize now, what can wait, and what changes staff need to make so the tech doesn\u2019t collect dust.",
   },
   {
-    title: "Connecting maps and data to daily operations",
-    body: "I help utilities and public agencies link geographic information directly to field crews, power grids, customer records, and billing\u2014so spatial data becomes a practical daily tool, not just a static map on a wall.",
+    title: "Connecting systems that don\u2019t talk to each other",
+    body: "Utilities and agencies usually have the data already; it is just trapped in separate systems. I help connect asset records, customer information, ERP, SCADA, and field tools so the left hand knows what the right hand is doing.",
   },
   {
     title: "Making messy data clear and useful",
@@ -30,7 +32,7 @@ const capabilities = [
   },
   {
     title: "Building systems that survive long-term",
-    body: "A new system rarely fails because the software breaks, it fails because nobody was trained or supported to run it. I help set up clear roles, daily routines, and local training so the system belongs to the institution, not outside consultants.",
+    body: "A new system rarely fails because the software breaks; it fails because nobody was trained or supported to run it. I help set up clear roles, daily routines, and local training so the system belongs to the institution, not outside consultants.",
   },
   {
     title: "Getting different groups talking",
@@ -54,6 +56,14 @@ const experienceReferences = [
   { organization: "Prince George's County Government", work: "Working on countywide GIS, data governance, emergency response, and public applications." },
 ];
 
+const credentials = [
+  "USAID",
+  "Digital Health Systems",
+  "Enterprise GIS",
+  "Public-Sector Advisory",
+  "Ethiopia & East Africa",
+];
+
 const engagementAreas = [
   "Advisory & consulting",
   "Strategic partnerships",
@@ -61,10 +71,22 @@ const engagementAreas = [
   "Speaking & collaboration",
 ];
 
+const railSections = [
+  { id: "welcome", label: "Welcome" },
+  { id: "introduction", label: "Introduction" },
+  { id: "expertise", label: "What I do" },
+  { id: "geospatial", label: "Geospatial practice" },
+  { id: "institutions", label: "Institutional experience" },
+  { id: "selected-work", label: "Selected work" },
+  { id: "point-of-view", label: "Point of view" },
+  { id: "work-together", label: "Work together" },
+];
+
 export default function Homepage() {
   return (
     <>
-      <section className="hero hero--profile">
+      <SectionRail sections={railSections} />
+      <section className="hero hero--profile" id="welcome">
         <div className="container hero-profile-grid">
           <div className="hero-profile-media">
             <Image
@@ -102,33 +124,39 @@ export default function Homepage() {
               <Button href="/work">Explore my work</Button>
               <TextLink href="/contact">Connect with me</TextLink>
             </div>
+            {/* Domains rather than tools: this page is read by people hiring
+                for judgment, not for software proficiency. */}
+            <ul className="cred-pills">
+              {credentials.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      <section className="section intro-letter">
+      <section className="section intro-letter" id="introduction">
         <div className="container">
           <div className="prose">
             <p>
-              For over 15 years, I have worked alongside governments, global
-              donors, tech entrepreneurs, and local communities across Africa
-              and the United States. I am a digital transformation, digital
-              health, and geospatial technology leader. At my core, my focus is
+              I am a digital transformation, digital health, and geospatial
+              technology leader with over 20 years of experience working alongside
+              governments, global donors, tech entrepreneurs, and local
+              communities across Africa and the United States. At my core, my focus is
               simple: I help turn complex technology investments into reliable,
               scalable systems that people can actually use, govern, and sustain
               long after the funding stops.
             </p>
             <p>
-              My approach was shaped by building systems from the ground up. In
-              Addis Ababa, I co-founded eAdrasha; a location-based start-up
-              built to map the unmapped. Leading a team of more than 40
-              professionals to reach 25,000 users in our first six months taught
-              me that technology only succeeds when it respects the daily
-              realities of the people using it.
+              My approach was shaped by building systems from the ground up.
+              Founding eAdrasha in Addis Ababa &mdash; a location start-up built
+              to map the unmapped &mdash; taught me that technology only
+              succeeds when it respects the daily realities of the people using
+              it.
             </p>
             <p>
               I brought that same human-centered discipline to USAID/Ethiopia as
-              Senior Digital Health Advisor, serving as the principal technical
+              Senior Digital Health Advisor, serving as the senior digital health
               lead for a $63 million national health portfolio. Across rural
               health posts, ministry offices, and international donor tables, my
               job was to build alignment, connecting health data, electronic
@@ -196,73 +224,58 @@ export default function Homepage() {
             </ul>
             <p>
               At the end of the day, I don&rsquo;t just help you pick or build
-              technology, I work alongside your team to make sure your
+              technology; I work alongside your team to make sure your
               organization can actually use it.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section surface" aria-labelledby="impact-heading">
+      <section className="section ink-surface" id="geospatial" aria-labelledby="gis-heading">
         <div className="container">
-          <div className="section-heading experience-intro">
-            <Eyebrow>Experience</Eyebrow>
-            <h2 id="impact-heading">A career connecting institutions, technology, and implementation.</h2>
+          <div className="section-heading">
+            <Eyebrow>Geospatial practice</Eyebrow>
+            <h2 id="gis-heading">What I build with spatial data.</h2>
+            <p>
+              Two decades of geospatial work, from writing the automation
+              scripts myself to advising utilities and ministries on the
+              platforms their operations run on.
+            </p>
           </div>
-          <div className="experience-story">
-            <div className="prose">
-              <p>
-                My career began in environmental science and geospatial
-                technology, working with GIS, spatial data, mapping, and the
-                systems that help public institutions understand places,
-                assets, and communities. Over time, that technical foundation
-                expanded into broader work on
-                institutional strategy, digital transformation, infrastructure,
-                data governance, and implementation.
-              </p>
-              <p>
-                I have worked inside U.S. local government and public utilities,
-                supported USAID programs across multiple countries, advised
-                national health systems, and helped technology teams translate
-                complex requirements into operating solutions. In Ethiopia, I
-                served as a principal technical oversight lead for an
-                approximately $63 million digital health activity, working with
-                government leaders, donors, implementers, vendors, and local
-                innovators to strengthen sustainability, interoperability, and
-                institutional ownership.
-              </p>
-              <p>
-                My current work with public-sector and utility leaders focuses
-                on enterprise modernization: connecting infrastructure data,
-                GIS, ERP, SCADA, customer systems, procurement, governance, and
-                organizational readiness into practical implementation pathways.
-              </p>
+
+          <div className="gis-grid">
+            {gisCapabilities.map((capability) => (
+              <article className="gis-card" key={capability.title}>
+                <h3>{capability.title}</h3>
+                <p>{capability.body}</p>
+                <p className="gis-evidence">{capability.evidence}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="stack-block">
+            <h3>Tools I work in</h3>
+            <div className="stack-groups">
+              {techStack.map((group) => (
+                <div className="stack-group" key={group.label}>
+                  <p className="stack-label">{group.label}</p>
+                  <ul className="stack-items">
+                    {group.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-            <aside className="experience-sidebar">
-              <p className="eyebrow">Across the work</p>
-              <ul className="plain-list">
-                <li>Government and public utilities</li>
-                <li>Digital health and national systems</li>
-                <li>Enterprise technology and data governance</li>
-                <li>Geospatial and infrastructure intelligence</li>
-                <li>Technology entrepreneurship and team leadership</li>
-              </ul>
-            </aside>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="institutions">
         <div className="container experience-band">
           <div className="section-heading">
             <Eyebrow>Institutional experience</Eyebrow>
             <h2>Turning technical knowledge into public-sector solutions.</h2>
-            <p>
-              My experience spans government agencies, development programs,
-              public utilities, and technology companies. I help people use
-              data, maps, digital systems, and practical strategies to make
-              better decisions and deliver services.
-            </p>
           </div>
           <div className="experience-references" aria-label="Selected institutional experience">
             {experienceReferences.map((reference) => (
@@ -272,13 +285,6 @@ export default function Homepage() {
               </article>
             ))}
           </div>
-          <p className="experience-note">
-            I have also supported 15+ youth-led digital service enterprises and
-            more than 100 technology professionals. As Founder and CEO of
-            eAdrasha, I led a 40+ person location-intelligence company and
-            helped grow its platform to more than 25,000 users within six
-            months.
-          </p>
         </div>
       </section>
 
@@ -304,7 +310,7 @@ export default function Homepage() {
         </div>
       </section>
 
-      <section className="section ink-surface">
+      <section className="section ink-surface" id="point-of-view">
         <div className="container point-of-view-grid">
           <div className="section-heading">
             <Eyebrow>Point of view</Eyebrow>
@@ -327,10 +333,10 @@ export default function Homepage() {
         </div>
       </section>
 
-      <section className="section cta-section">
+      <section className="section cta-section" id="work-together">
         <div className="container section-heading">
           <Eyebrow>Let&apos;s work together</Eyebrow>
-          <h2>Working on a difficult systems problem?</h2>
+          <h2>Tell me what you&rsquo;re trying to build.</h2>
           <p>
             I work with governments, development organizations, technology
             companies, investors, and institutions tackling complex digital,
