@@ -109,10 +109,6 @@ export default function ContactPage() {
             </div>
             <div className="rule" />
             <p>
-              <strong>Email:</strong>{" "}
-              <a href={`mailto:${site.email}`}>{site.email}</a>
-            </p>
-            <p>
               <strong>Location:</strong> {site.location}
             </p>
             <p>Available for regional and international engagements.</p>
