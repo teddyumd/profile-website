@@ -7,7 +7,7 @@ import { projects, githubProfile } from "@/content/projects";
 import { absoluteUrl } from "@/lib/siteUrl";
 
 export const metadata: Metadata = {
-  title: "About Tewodros Hailegeberel",
+  title: "About",
   alternates: { canonical: absoluteUrl("/about") },
   description:
     "Learn about Tewodros Hailegeberel's career across public-sector transformation, digital systems, geospatial intelligence, digital health, infrastructure, government, and technology in Africa and the United States.",

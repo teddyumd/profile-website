@@ -30,7 +30,11 @@ export type CaseStudy = {
   number: string;
   label: string;
   title: string;
+  /** Short title for <title> and search results. Falls back to `title`. */
+  metaTitle?: string;
   summary: string;
+  /** 120-160 char description for search results. Falls back to `summary`. */
+  metaDescription?: string;
   deck: string;
   context?: string;
   approach?: string;

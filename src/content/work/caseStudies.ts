@@ -6,6 +6,9 @@ export const caseStudies: CaseStudy[] = [
     number: "01",
     label: "Digital Health / Ethiopia",
     title: "Strengthening Ethiopia\u2019s National Digital Health Information Systems & Architecture",
+    metaTitle: "Ethiopia\u2019s National Digital Health Architecture",
+    metaDescription:
+      "Technical oversight lead for USAID\u2019s $63M Digital Health Activity in Ethiopia, covering systems architecture, interoperability, and institutional ownership.",
     summary:
       "As Senior Digital Health Advisor at USAID/Ethiopia, I served as the senior adviser and principal technical oversight lead for USAID\u2019s approximately $63 million Digital Health Activity, one of the country\u2019s major donor-supported investments in national digital-health systems. My responsibility was considerably broader than providing technical advice on individual software platforms.",
     deck:
@@ -81,6 +84,9 @@ export const caseStudies: CaseStudy[] = [
     number: "02",
     label: "Energy & Infrastructure / Ethiopia",
     title: "Building the geospatial foundation for a modern electric utility",
+    metaTitle: "Geospatial Foundations for an Electric Utility",
+    metaDescription:
+      "How Ethiopian Electric Utility moved GIS beyond mapping into the operational backbone linking assets, customers, field teams, and enterprise systems.",
     summary:
       "I supported the Ethiopian Electric Utility (EEU) company to modernize their data management for their network infrastructure. They had a major data fragmentation as well as data management challenges. For a large electric utility like EEU, GIS becomes valuable when it moves beyond mapping and becomes part of the operational information infrastructure connecting assets, customers, networks, field teams, enterprise systems, and executive decision-making.",
     deck:
@@ -161,6 +167,9 @@ export const caseStudies: CaseStudy[] = [
     number: "03",
     label: "Entrepreneurship / Location Intelligence",
     title: "Built the first Ethiopian Digital Web Map \u2014 eAdrasha",
+    metaTitle: "eAdrasha: Ethiopia\u2019s First Digital Web Map",
+    metaDescription:
+      "Founding the first Ethiopian digital web map, built to solve informal addressing and make businesses findable across Addis Ababa.",
     summary:
       "Before my work became centered on national digital transformation, I founded eAdrasha to address the practical challenge of finding businesses, navigating informal addressing systems, and using reliable location information across Addis Ababa.",
     deck:
@@ -228,6 +237,9 @@ export const caseStudies: CaseStudy[] = [
     number: "04",
     label: "Local Government / Maryland",
     title: "Replacing a paper inspection workflow with mobile GIS",
+    metaTitle: "Mobile GIS for Field Inspections, Prince George\u2019s County",
+    metaDescription:
+      "Replacing a paper inspection workflow with mobile GIS for Prince George\u2019s County, cutting hundreds of hours a year of manual report assembly.",
     summary:
       "Inspectors were photographing a handwritten slip before every visit just to keep their photos organized, then spending hundreds of hours a year renaming files and assembling reports by hand. Reports lagged inspections by days, and some inspections were missed entirely.",
     deck:

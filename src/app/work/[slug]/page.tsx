@@ -21,15 +21,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const study = getCaseStudy(slug);
   if (!study) return {};
+  // Search listings truncate around 60 chars of title and 160 of description,
+  // so these are written separately from the on-page headline and summary.
+  const metaTitle = study.metaTitle ?? study.title;
+  const metaDescription = study.metaDescription ?? study.summary;
+
   return {
-    title: study.title,
-    description: study.summary,
+    // `absolute` bypasses the root layout's "%s | Tewodros Hailegeberel"
+    // template. That suffix costs 23 of the ~60 characters a search result
+    // shows, which is better spent on the subject of the case study.
+    title: { absolute: metaTitle },
+    description: metaDescription,
     alternates: {
       canonical: absoluteUrl(`/work/${study.slug}`),
     },
     openGraph: {
-      title: `${study.title} | ${site.name}`,
-      description: study.summary,
+      title: `${metaTitle} | ${site.name}`,
+      description: metaDescription,
       images: ["/opengraph-image"],
     },
   };
