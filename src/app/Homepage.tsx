@@ -75,12 +75,12 @@ const engagementAreas = [
 const railSections = [
   { id: "welcome", label: "Welcome" },
   { id: "introduction", label: "Introduction" },
-  { id: "expertise", label: "What I do" },
-  { id: "geospatial", label: "Geospatial practice" },
-  { id: "institutions", label: "Institutional experience" },
-  { id: "selected-work", label: "Selected work" },
-  { id: "point-of-view", label: "Point of view" },
-  { id: "work-together", label: "Work together" },
+  { id: "expertise", label: "What I Do" },
+  { id: "geospatial", label: "Geospatial Practice" },
+  { id: "institutions", label: "Institutional Experience" },
+  { id: "selected-work", label: "Selected Work" },
+  { id: "point-of-view", label: "Point of View" },
+  { id: "work-together", label: "Work Together" },
 ];
 
 export default function Homepage() {
@@ -113,7 +113,7 @@ export default function Homepage() {
             <p className="hero-location">Addis Ababa, Ethiopia / Africa</p>
           </div>
           <div className="hero-copy">
-            <h1>Welcome to My Website.</h1>
+            <h1>Welcome</h1>
             <p className="intro">
               I created this space to give you a better idea of who I am, my
               experiences, my skills, and a few key pieces of work I want to
