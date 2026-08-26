@@ -26,7 +26,7 @@ export default function AboutPage() {
     <>
       <section className="page-hero page-hero--bare">
         <div className="container page-hero-inner">
-          <Eyebrow>About Me</Eyebrow>
+          <Eyebrow>About me</Eyebrow>
           <h1 className="visually-hidden">About Tewodros Hailegeberel</h1>
         </div>
       </section>

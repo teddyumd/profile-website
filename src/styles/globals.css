@@ -2298,3 +2298,20 @@ html {
   font-size: var(--text-sm);
   margin: 0;
 }
+
+/* Direct channels now sit above the form, full width rather than in the aside */
+.contact-channels {
+  display: grid;
+  gap: var(--s4);
+  margin-bottom: var(--s8);
+}
+
+.contact-channels .channel-grid {
+  margin-top: 0;
+}
+
+@media (min-width: 900px) {
+  .contact-channels .channel-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

@@ -18,7 +18,7 @@ export default function WorkPage() {
       <section className="page-hero">
         <div className="container page-hero-inner page-hero-inner--wide">
           <Eyebrow>Portfolio</Eyebrow>
-          <h1>Featuring Selected Work</h1>
+          <h1>Featuring selected work</h1>
           <div className="hero-story">
             <p>
               Below is a selection of the work I was proud of, and I hope it will

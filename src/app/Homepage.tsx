@@ -202,7 +202,7 @@ export default function Homepage() {
           </div>
 
           <div className="why-effective">
-            <h3>Why I Enjoy This Work</h3>
+            <h3>Why I enjoy this work</h3>
             <p className="why-effective-lead">
               My approach comes from being able to talk to leadership about
               strategy and budgets in the morning, and then sit down with
