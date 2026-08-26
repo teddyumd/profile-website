@@ -2209,3 +2209,18 @@ html {
   color: var(--ink-800);
   font-size: var(--text-sm);
 }
+
+/* Native-script product name, marked lang="am" so screen readers switch voice */
+.ink-surface .product-native {
+  color: rgba(250, 249, 245, 0.6);
+  font-size: 0.7em;
+  font-weight: 500;
+  margin-left: var(--s3);
+}
+
+.ink-surface .product-meaning {
+  color: rgba(250, 249, 245, 0.55);
+  font-size: var(--text-2xs);
+  font-style: italic;
+  margin: var(--s1) 0 0;
+}

@@ -69,6 +69,9 @@ export type Project = {
 export type Product = {
   slug: string;
   name: string;
+  /** Native-script name, where the product has one. */
+  nativeName?: string;
+  nameMeaning?: string;
   tagline: string;
   status: string;
   /** The real-world problem, stated without product language. */

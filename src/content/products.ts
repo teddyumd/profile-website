@@ -30,6 +30,8 @@ export const products: Product[] = [
   {
     slug: "enechawet",
     name: "Enechawet",
+    nativeName: "\u12A5\u1295\u132B\u12C8\u1275",
+    nameMeaning: "Let\u2019s play",
     tagline: "Booking a pitch without making ten phone calls",
     status: "Built and working, not yet launched",
     problem:

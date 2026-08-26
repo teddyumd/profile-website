@@ -68,7 +68,17 @@ export default function WorkPage() {
               <article className="product-card" key={product.slug}>
                 <div className="product-head">
                   <div>
-                    <h3>{product.name}</h3>
+                    <h3>
+                      {product.name}
+                      {product.nativeName ? (
+                        <span className="product-native" lang="am">
+                          {product.nativeName}
+                        </span>
+                      ) : null}
+                    </h3>
+                    {product.nameMeaning ? (
+                      <p className="product-meaning">&ldquo;{product.nameMeaning}&rdquo;</p>
+                    ) : null}
                     <p className="product-tagline">{product.tagline}</p>
                   </div>
                   <p className="product-status">{product.status}</p>
