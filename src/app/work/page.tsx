@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CaseStudyPreview } from "@/components/content/CaseStudyPreview";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { caseStudies } from "@/content/work/caseStudies";
+import { products } from "@/content/products";
 import { absoluteUrl } from "@/lib/siteUrl";
 
 export const metadata: Metadata = {
@@ -47,6 +48,66 @@ export default function WorkPage() {
           {caseStudies.map((study) => (
             <CaseStudyPreview key={study.slug} study={study} headingLevel="h2" />
           ))}
+        </div>
+      </section>
+
+      <section className="section ink-surface" id="products" aria-labelledby="products-heading">
+        <div className="container">
+          <div className="section-heading">
+            <Eyebrow>Products</Eyebrow>
+            <h2 id="products-heading">Systems I built end to end.</h2>
+            <p>
+              The work above is advisory. These two I designed and built
+              myself, from the spatial database up. Both run; neither has
+              launched yet.
+            </p>
+          </div>
+
+          <div className="product-list">
+            {products.map((product) => (
+              <article className="product-card" key={product.slug}>
+                <div className="product-head">
+                  <div>
+                    <h3>{product.name}</h3>
+                    <p className="product-tagline">{product.tagline}</p>
+                  </div>
+                  <p className="product-status">{product.status}</p>
+                </div>
+
+                <div className="product-body">
+                  <div>
+                    <p className="product-label">The problem</p>
+                    <p>{product.problem}</p>
+                  </div>
+                  <div>
+                    <p className="product-label">What it does differently</p>
+                    <p>{product.approach}</p>
+                  </div>
+                  <div>
+                    <p className="product-label">Where it applies</p>
+                    <ul className="product-uses">
+                      {product.uses.map((use) => (
+                        <li key={use}>{use}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="product-stack">
+                  {product.stack.map((group) => (
+                    <div key={group.label}>
+                      <p className="stack-label">{group.label}</p>
+                      <ul className="stack-items">
+                        {group.items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </>

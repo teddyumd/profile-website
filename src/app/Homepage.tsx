@@ -6,6 +6,7 @@ import { TextLink } from "@/components/ui/TextLink";
 import { site } from "@/content/site";
 import { SectionRail } from "@/components/layout/SectionRail";
 import { gisCapabilities, techStack } from "@/content/gis";
+import { products } from "@/content/products";
 import { caseStudies } from "@/content/work/caseStudies";
 
 const capabilityLead = [
@@ -306,6 +307,22 @@ export default function Homepage() {
                 <CaseStudyPreview key={study.slug} study={study} />
               ))}
           </div>
+          {/* The case studies above are advisory work. This points at the
+              two systems built hands-on, which live on the portfolio page. */}
+          <div className="built-strip">
+            <p className="built-strip-lead">
+              Alongside the advisory work, I build systems myself:
+            </p>
+            <ul className="built-strip-list">
+              {products.map((product) => (
+                <li key={product.slug}>
+                  <a href="/work#products">{product.name}</a>
+                  <span>{product.tagline}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <TextLink href="/work">View full portfolio</TextLink>
         </div>
       </section>

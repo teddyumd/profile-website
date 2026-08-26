@@ -2060,3 +2060,152 @@ html {
 /* The channels block needs separation from the opportunity list above it */
 .contact-side h3 + .channel-grid { margin-top: var(--s3); }
 .contact-side .rule + h3 { margin-top: var(--s5); }
+
+/* Products — systems built end to end. Dark band, so colours resolve from
+   .ink-surface; the shared .stack-label / .stack-items rules apply here too. */
+.product-list {
+  display: grid;
+  gap: var(--s6);
+  margin-top: var(--s6);
+}
+
+.product-card {
+  background: rgba(250, 249, 245, 0.045);
+  border: 1px solid rgba(250, 249, 245, 0.14);
+  border-radius: 12px;
+  display: grid;
+  gap: var(--s5);
+  padding: var(--s6);
+}
+
+.product-head {
+  align-items: baseline;
+  border-bottom: 1px solid rgba(250, 249, 245, 0.14);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3) var(--s5);
+  justify-content: space-between;
+  padding-bottom: var(--s4);
+}
+
+.ink-surface .product-head h3 {
+  color: var(--paper-50);
+  margin: 0;
+}
+
+.ink-surface .product-tagline {
+  color: rgba(250, 249, 245, 0.72);
+  font-size: var(--text-sm);
+  margin: var(--s1) 0 0;
+}
+
+.ink-surface .product-status {
+  border: 1px solid rgba(250, 249, 245, 0.28);
+  border-radius: 999px;
+  color: #7fcdc8;
+  font-size: var(--text-3xs);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  margin: 0;
+  padding: var(--s2) var(--s4);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.product-body {
+  display: grid;
+  gap: var(--s5);
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+}
+
+.ink-surface .product-label {
+  color: #7fcdc8;
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  margin: 0 0 var(--s2);
+  text-transform: uppercase;
+}
+
+.ink-surface .product-body p:not(.product-label) {
+  color: rgba(250, 249, 245, 0.78);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.product-uses {
+  display: grid;
+  gap: var(--s2);
+  margin: 0;
+  padding-left: var(--s4);
+}
+
+.ink-surface .product-uses li {
+  color: rgba(250, 249, 245, 0.78);
+  font-size: var(--text-sm);
+}
+
+.ink-surface .product-uses li::marker {
+  color: #7fcdc8;
+}
+
+.product-stack {
+  border-top: 1px solid rgba(250, 249, 245, 0.14);
+  display: grid;
+  gap: var(--s4);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  padding-top: var(--s5);
+}
+
+/* Homepage pointer to the products built hands-on */
+.built-strip {
+  border-top: 1px solid rgba(16, 24, 27, 0.16);
+  display: grid;
+  gap: var(--s3);
+  margin-top: var(--s6);
+  padding-top: var(--s6);
+}
+
+.built-strip-lead {
+  color: var(--slate-600);
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.built-strip-list {
+  display: grid;
+  gap: var(--s3);
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.built-strip-list li {
+  border-left: 2px solid var(--teal-700);
+  display: grid;
+  gap: var(--s1);
+  padding-left: var(--s4);
+}
+
+.built-strip-list a {
+  color: var(--ink-950);
+  font-size: var(--text-lg);
+  font-weight: 730;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.built-strip-list a:hover {
+  color: var(--teal-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.built-strip-list span {
+  color: var(--ink-800);
+  font-size: var(--text-sm);
+}

@@ -65,3 +65,16 @@ export type Project = {
   problem: string;
   built: string;
 };
+
+export type Product = {
+  slug: string;
+  name: string;
+  tagline: string;
+  status: string;
+  /** The real-world problem, stated without product language. */
+  problem: string;
+  /** What the system does differently, and why that matters. */
+  approach: string;
+  uses: string[];
+  stack: { label: string; items: string[] }[];
+};
