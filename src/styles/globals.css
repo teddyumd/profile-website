@@ -1166,6 +1166,7 @@ main {
 .prose {
   display: grid;
   gap: var(--s5);
+  max-width: var(--reading-wide);
 }
 
 .prose p {

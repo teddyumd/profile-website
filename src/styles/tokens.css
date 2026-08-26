@@ -36,6 +36,9 @@
   --s12: 144px;
   --container: 1180px;
   --reading: 720px;
+  /* Wider measure for long-form prose blocks that sit in a full-width
+     column: fills the space without pushing line length past ~85 chars. */
+  --reading-wide: 900px;
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;
