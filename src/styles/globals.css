@@ -348,11 +348,14 @@ main {
 }
 
 .hero-profile-media .hero-name {
+  /* Matches the h1 treatment exactly: same clamp, weight, and tracking,
+     so the name and "Welcome" read as one typographic pair. */
   color: var(--ink-950);
-  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  font-size: clamp(2.25rem, 4.4vw, 3.25rem);
+  font-weight: 750;
+  letter-spacing: -0.022em;
   line-height: 1.06;
   margin-top: 0;
-  white-space: nowrap;
 }
 
 .hero-identity {
