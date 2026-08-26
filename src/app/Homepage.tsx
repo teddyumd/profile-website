@@ -126,7 +126,7 @@ export default function Homepage() {
             </p>
             <div className="hero-actions">
               <Button href="/work">Explore My Work</Button>
-              <TextLink href="/contact">Connect with Me</TextLink>
+              <TextLink href="/contact">{site.cta}</TextLink>
             </div>
             {/* Domains rather than tools: this page is read by people hiring
                 for judgment, not for software proficiency. */}
@@ -367,7 +367,7 @@ export default function Homepage() {
               <span key={area}>{area}</span>
             ))}
           </div>
-          <Button href="/contact">Start a Conversation</Button>
+          <Button href="/contact">{site.cta}</Button>
         </div>
       </section>
     </>
