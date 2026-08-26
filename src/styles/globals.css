@@ -41,12 +41,33 @@ main {
   width: 100%;
 }
 
+/* Fluid rather than a single 64px step with one breakpoint: scales 48px on
+   a phone to 80px on a wide screen, so the rhythm holds at every width. */
 .section {
-  padding-block: var(--s8);
+  padding-block: clamp(var(--s7), 5.5vw, var(--s9));
 }
 
 .section--tight {
-  padding-block: var(--s8);
+  padding-block: clamp(var(--s6), 3.5vw, var(--s7));
+}
+
+/* Two sections in a row sharing a background produced double padding and no
+   divider — 128px of empty page. A colour change earns that space; a plain
+   boundary does not, so the second one drops its top padding. */
+.section:not(.surface):not(.ink-surface):not(.cta-section)
+  + .section:not(.surface):not(.ink-surface):not(.cta-section) {
+  padding-top: 0;
+}
+
+.section.surface + .section.surface,
+.section.ink-surface + .section.ink-surface {
+  padding-top: 0;
+}
+
+/* The hero paints paper-50, which is also the body colour, so the section
+   after it is a same-background boundary even though it declares no bg. */
+.hero + .section:not(.surface):not(.ink-surface) {
+  padding-top: 0;
 }
 
 .section-heading {
@@ -326,7 +347,9 @@ main {
 }
 
 .hero {
-  padding-block: var(--s11) var(--s10);
+  /* 120px under a sticky header left the portrait floating; this scales
+     56px to 96px and weights the top lighter than the bottom. */
+  padding-block: clamp(var(--s7), 5vw, var(--s10)) clamp(var(--s7), 5.5vw, var(--s9));
 }
 
 .hero--profile {
@@ -970,7 +993,7 @@ main {
 
 
 .page-hero {
-  padding-block: var(--s9) var(--s8);
+  padding-block: clamp(var(--s7), 5vw, var(--s9)) clamp(var(--s6), 4vw, var(--s8));
 }
 
 .page-hero-inner {
@@ -991,7 +1014,7 @@ main {
 }
 
 .case-hero {
-  padding-block: var(--s9);
+  padding-block: clamp(var(--s7), 5vw, var(--s9));
 }
 
 .case-hero-grid {
@@ -1505,10 +1528,8 @@ main {
     padding-inline: 20px;
   }
 
-  .section {
-    padding-block: var(--s7);
-  }
-
+  /* .section padding is fluid now and already resolves to --s7 here;
+     re-declaring it would undo the same-background collapse above. */
   .grid--2,
   .grid--3 {
     grid-template-columns: 1fr;
