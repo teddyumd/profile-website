@@ -60,7 +60,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             <h1>{study.title}</h1>
             <p>{study.deck}</p>
             <div>
-              <TextLink href="/work">Back to portfolio</TextLink>
+              <TextLink href="/work">Back to Portfolio</TextLink>
             </div>
           </div>
           <dl className="case-fact-list">
@@ -103,7 +103,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             <>
               <DigitalHealthNarrative />
               <article className="case-section">
-                <h2>Key business &amp; technical impact</h2>
+                <h2>Key Business &amp; Technical Impact</h2>
                 <ul className="impact-list impact-list--detail">
                   {study.impact.map((item) => (
                     <li key={item.label}>
@@ -133,7 +133,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
           </article>
 
           <article className="case-section">
-            <h2>What I did</h2>
+            <h2>What I Did</h2>
             <ul className="plain-list">
               {study.contributions.map((item) => (
                 <li key={item}>{item}</li>
@@ -143,7 +143,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
           {study.supportingDomains ? (
             <article className="case-section">
-              <h2>Systems represented</h2>
+              <h2>Systems Represented</h2>
               <ul className="plain-list">
                 {study.supportingDomains.map((item) => (
                   <li key={item}>{item}</li>
@@ -154,13 +154,13 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
           {study.approach ? (
             <article className="case-section">
-              <h2>How I approached it</h2>
+              <h2>How I Approached It</h2>
               <p>{study.approach}</p>
             </article>
           ) : null}
 
           <article className="case-section">
-            <h2>Key business &amp; technical impact</h2>
+            <h2>Key Business &amp; Technical Impact</h2>
             <ul className="impact-list impact-list--detail">
               {study.impact.map((item) => (
                 <li key={item.label}>
@@ -172,13 +172,13 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
           {study.enabled ? (
             <article className="case-section case-section--enabled">
-              <h2>What this enabled</h2>
+              <h2>What This Enabled</h2>
               <p>{study.enabled}</p>
             </article>
           ) : null}
 
           <article className="case-lesson">
-            <p className="eyebrow">Key lesson</p>
+            <p className="eyebrow">Key Lesson</p>
             <blockquote>{study.lesson}</blockquote>
           </article>
 
@@ -190,7 +190,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
       <section className="section surface">
         <div className="container section-heading">
           <p className="eyebrow">Discuss an opportunity</p>
-          <h2>Working on a difficult systems problem?</h2>
+          <h2>Working on a Difficult Systems Problem?</h2>
           <p>
             I am interested in leadership, advisory, and partnership
             opportunities involving public-sector transformation, digital

@@ -21,9 +21,9 @@ export const products: Product[] = [
       "Market saturation audits that surface under-served pockets",
     ],
     stack: [
-      { label: "Spatial core", items: ["PostgreSQL", "PostGIS", "Uber H3 indexing", "Areal interpolation"] },
+      { label: "Spatial Core", items: ["PostgreSQL", "PostGIS", "Uber H3 indexing", "Areal interpolation"] },
       { label: "Routing", items: ["OSRM", "Valhalla", "OpenStreetMap road graph"] },
-      { label: "Data pipeline", items: ["Python", "GeoPandas", "Shapely", "Census demographics"] },
+      { label: "Data Pipeline", items: ["Python", "GeoPandas", "Shapely", "Census demographics"] },
       { label: "Interface", items: ["Next.js", "TypeScript", "MapLibre GL JS", "Vector tiles"] },
     ],
   },
@@ -47,7 +47,7 @@ export const products: Product[] = [
       { label: "Backend", items: ["Supabase", "PostgreSQL", "PostGIS", "Row Level Security"] },
       { label: "Concurrency", items: ["Realtime WebSockets", "Row-level locking", "Atomic transactions"] },
       { label: "Routing", items: ["OSRM", "Travel-time ranking", "Distance matrix"] },
-      { label: "Client & payments", items: ["React Native", "PWA", "MapLibre", "Telebirr", "Chapa"] },
+      { label: "Client & Payments", items: ["React Native", "PWA", "MapLibre", "Telebirr", "Chapa"] },
     ],
   },
 ];

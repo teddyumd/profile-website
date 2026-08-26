@@ -5,7 +5,7 @@ export const site = {
     "Strategy, Data, Geospatial Intelligence, Institutional Transformation",
   location: "Addis Ababa, Ethiopia",
   languages: "English and Amharic",
-  cta: "Discuss an opportunity",
+  cta: "Discuss an Opportunity",
   email: "thailegeberel@gmail.com",
   // wa.me needs digits only, no plus sign or spaces; the display form is
   // kept separate so the link and the label can never drift apart.

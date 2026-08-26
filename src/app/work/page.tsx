@@ -18,7 +18,7 @@ export default function WorkPage() {
       <section className="page-hero">
         <div className="container page-hero-inner page-hero-inner--wide">
           <Eyebrow>Portfolio</Eyebrow>
-          <h1>Featuring selected work</h1>
+          <h1>Featuring Selected Work</h1>
           <div className="hero-story">
             <p>
               Below is a selection of the work I was proud of, and I hope it will
@@ -55,7 +55,7 @@ export default function WorkPage() {
         <div className="container">
           <div className="section-heading">
             <Eyebrow>Products</Eyebrow>
-            <h2 id="products-heading">Systems I built end to end.</h2>
+            <h2 id="products-heading">Systems I Built End to End.</h2>
             <p>
               The work above is advisory. These two I designed and built
               myself, from the spatial database up. Both run; neither has
@@ -86,15 +86,15 @@ export default function WorkPage() {
 
                 <div className="product-body">
                   <div>
-                    <p className="product-label">The problem</p>
+                    <p className="product-label">The Problem</p>
                     <p>{product.problem}</p>
                   </div>
                   <div>
-                    <p className="product-label">What it does differently</p>
+                    <p className="product-label">What It Does Differently</p>
                     <p>{product.approach}</p>
                   </div>
                   <div>
-                    <p className="product-label">Where it applies</p>
+                    <p className="product-label">Where It Applies</p>
                     <ul className="product-uses">
                       {product.uses.map((use) => (
                         <li key={use}>{use}</li>

@@ -39,23 +39,23 @@ export type StackGroup = { label: string; items: string[] };
 
 export const techStack: StackGroup[] = [
   {
-    label: "Desktop & enterprise GIS",
+    label: "Desktop & Enterprise GIS",
     items: ["QGIS", "ArcGIS Pro", "ArcGIS Server", "Portal for ArcGIS", "Enterprise Geodatabase"],
   },
   {
-    label: "Programming & automation",
+    label: "Programming & Automation",
     items: ["Python", "ArcPy", "SQL", "ETL pipelines", "Google Apps Script"],
   },
   {
-    label: "Spatial data & web",
+    label: "Spatial Data & Web",
     items: ["PostGIS", "GeoJSON", "OpenStreetMap", "WebGIS", "Spatial dashboards"],
   },
   {
-    label: "Earth observation",
+    label: "Earth Observation",
     items: ["Google Earth Engine", "Satellite imagery analysis"],
   },
   {
-    label: "Health & M&E systems",
+    label: "Health & M&E Systems",
     items: ["DHIS2", "KoboToolbox", "OpenHIM", "Tableau"],
   },
 ];

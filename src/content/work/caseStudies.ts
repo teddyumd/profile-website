@@ -31,10 +31,10 @@ export const caseStudies: CaseStudy[] = [
           "8,000+ health posts and 1,300+ health facilities reached by supported digital-health services",
       },
     ],
-    challengeHeading: "The challenge",
+    challengeHeading: "The Challenge",
     challenge:
       "Deploying digital health tools without institutional alignment creates fragmented systems and unsustainable tech debt. Transforming public health at a national scale requires unifying government policy, multi-donor funding, interoperable data architectures, and frontline digital literacy \u2014 which means multiple platforms, institutions, implementing partners, vendors, budgets, and operating models all have to move in the same direction.",
-    roleHeading: "My role",
+    roleHeading: "My Role",
     roleDescription:
       "As Senior Digital Health Advisor at USAID/Ethiopia, I served as a senior adviser and senior digital health lead for the approximately $63 million Digital Health Activity. My role combined strategy, portfolio oversight, technical review, stakeholder engagement, procurement input, risk management, and executive decision support.",
     contributions: [
@@ -83,7 +83,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "utility-modernization",
     number: "02",
     label: "Energy & Infrastructure / Ethiopia",
-    title: "Building the geospatial foundation for a modern electric utility",
+    title: "Building the Geospatial Foundation for a Modern Electric Utility",
     metaTitle: "Geospatial Foundations for an Electric Utility",
     metaDescription:
       "How Ethiopian Electric Utility moved GIS beyond mapping into the operational backbone linking assets, customers, field teams, and enterprise systems.",
@@ -109,10 +109,10 @@ export const caseStudies: CaseStudy[] = [
       { label: "Investment", value: "Approximately $5 million donor-backed modernization initiative" },
       { label: "Efficiency", value: "Approximately 10% reduction in proposed Esri-related costs" },
     ],
-    challengeHeading: "The challenge",
+    challengeHeading: "The Challenge",
     challenge:
       "For a large utility, GIS cannot create operational value as a standalone mapping system. Reliable infrastructure intelligence depends on authoritative data, network connectivity, governance, operating workflows, system integration, institutional capacity, and clear ownership across departments.",
-    roleHeading: "My role",
+    roleHeading: "My Role",
     roleDescription:
       "I advise public-sector and utility leaders on enterprise GIS modernization, infrastructure data, governance, readiness, implementation sequencing, procurement inputs, and long-term sustainability. The work sits between executive priorities, operational requirements, technical architecture, vendor delivery, and institutional capacity.",
     contributions: [
@@ -166,7 +166,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "eadrasha",
     number: "03",
     label: "Entrepreneurship / Location Intelligence",
-    title: "Built the first Ethiopian Digital Web Map \u2014 eAdrasha",
+    title: "Built the First Ethiopian Digital Web Map \u2014 eAdrasha",
     metaTitle: "eAdrasha: Ethiopia\u2019s First Digital Web Map",
     metaDescription:
       "Founding the first Ethiopian digital web map, built to solve informal addressing and make businesses findable across Addis Ababa.",
@@ -189,10 +189,10 @@ export const caseStudies: CaseStudy[] = [
       { label: "Team", value: "40+ people" },
       { label: "Users", value: "25,000+ within six months" },
     ],
-    challengeHeading: "The problem",
+    challengeHeading: "The Problem",
     challenge:
       "Reliable digital addressing and location discovery were significant challenges in Addis Ababa. Businesses, residents, logistics operators, and service providers needed better ways to find places, search for destinations, navigate the city, and use structured location information.",
-    roleHeading: "What I built",
+    roleHeading: "What I Built",
     roleDescription:
       "I founded eAdrasha as a locally developed location-intelligence platform and built the organization around it, combining product development, software, geospatial data, field operations, quality assurance, partnerships, customer engagement, and business development.",
     contributions: [
@@ -236,7 +236,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "liquor-license-inspections",
     number: "04",
     label: "Local Government / Maryland",
-    title: "Replacing a paper inspection workflow with mobile GIS",
+    title: "Replacing a Paper Inspection Workflow with Mobile GIS",
     metaTitle: "Mobile GIS for Field Inspections, Prince George\u2019s County",
     metaDescription:
       "Replacing a paper inspection workflow with mobile GIS for Prince George\u2019s County, cutting hundreds of hours a year of manual report assembly.",
@@ -258,10 +258,10 @@ export const caseStudies: CaseStudy[] = [
       { label: "Location", value: "Prince George's County, Maryland" },
       { label: "Result", value: "Roughly 50% less labour time for inspection and reporting" },
     ],
-    challengeHeading: "The challenge",
+    challengeHeading: "The Challenge",
     challenge:
       "Inspectors located establishments on paper maps, wrote notes on paper forms, and photographed a handwritten slip carrying the establishment ID and address before each visit so the photos could be sorted afterwards. Back at the office they renamed every photo by hand, filed them per establishment, and pasted results into a report template. Assignments went out by email each morning. The process consumed hundreds of hours a year, reports trailed inspections by days, data entry backlogged, and inspections were sometimes missed altogether.",
-    roleHeading: "My role",
+    roleHeading: "My Role",
     roleDescription:
       "The Board asked the county GIS department for a low-cost alternative. I was tasked with reviewing the requirements, recommending improvements, and implementing them if they proved cost-effective. The brief was specific: record where each inspection happened, keep every supporting photo and note tied to that point, and generate the report from the data rather than by hand.",
     contributions: [

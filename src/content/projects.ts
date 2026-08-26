@@ -5,7 +5,7 @@ export const githubProfile = "https://github.com/teddyumd";
 export const projects: Project[] = [
   {
     name: "Gefersa_Resv_Water_Quality_GEE",
-    title: "Reservoir water-quality monitoring",
+    title: "Reservoir Water-Quality Monitoring",
     problem:
       "Addis Ababa depends on the Gefersa Reservoir, and its water quality is hard to observe continuously from the ground.",
     built:
@@ -13,7 +13,7 @@ export const projects: Project[] = [
   },
   {
     name: "Addis_Ababa_OSM",
-    title: "Open geodata for Addis Ababa",
+    title: "Open Geodata for Addis Ababa",
     problem:
       "A city of millions with very little openly available spatial data to plan or build on.",
     built:
@@ -29,7 +29,7 @@ export const projects: Project[] = [
   },
   {
     name: "esri_arcpy",
-    title: "Automating Esri workflows",
+    title: "Automating Esri Workflows",
     problem:
       "GIS teams lose days to repetitive tasks that should run themselves.",
     built:
@@ -37,7 +37,7 @@ export const projects: Project[] = [
   },
   {
     name: "GAS-Apartment-Management",
-    title: "Property management, without the software budget",
+    title: "Property Management, Without the Software Budget",
     problem:
       "Small property operations need real record-keeping but cannot justify enterprise systems.",
     built:

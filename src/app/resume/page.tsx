@@ -26,7 +26,7 @@ export default function ResumePage() {
       <section className="page-hero page-hero--tight">
         <div className="container page-hero-inner">
           <Eyebrow>Career</Eyebrow>
-          <h1>I started out making maps.</h1>
+          <h1>I Started Out Making Maps.</h1>
           <div className="hero-story">
             <p>
               That grew into a career helping governments, utilities, and
@@ -43,7 +43,7 @@ export default function ResumePage() {
           </div>
           <div className="hero-actions">
             <Button href="/contact">{site.cta}</Button>
-            <TextLink href="/work">View portfolio</TextLink>
+            <TextLink href="/work">View Portfolio</TextLink>
           </div>
         </div>
       </section>

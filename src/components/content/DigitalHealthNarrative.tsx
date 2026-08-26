@@ -32,7 +32,7 @@ export function DigitalHealthNarrative() {
       </section>
 
       <section className="case-narrative-section">
-        <h2>The challenge</h2>
+        <h2>The Challenge</h2>
         <p>
           Ethiopia had already made substantial investments in digital health.
           The challenge was increasingly one of scale, coordination,
@@ -58,7 +58,7 @@ export function DigitalHealthNarrative() {
       </section>
 
       <section className="case-narrative-section">
-        <h2>My role</h2>
+        <h2>My Role</h2>
         <p>
           I helped manage USAID&rsquo;s oversight of a complex national activity
           involving the Ethiopian Ministry of Health, USAID technical and
@@ -82,7 +82,7 @@ export function DigitalHealthNarrative() {
       </section>
 
       <section className="case-narrative-section">
-        <h2>Data, analytics and decisions</h2>
+        <h2>Data, Analytics and Decisions</h2>
         <p>
           I also worked extensively with analytics, GIS, dashboards, and
           national health-information data. This included analysis using
@@ -108,7 +108,7 @@ export function DigitalHealthNarrative() {
       </section>
 
       <section className="case-narrative-section">
-        <h2>Government ownership</h2>
+        <h2>Government Ownership</h2>
         <p>
           The activity existed to strengthen Ethiopian institutions, so
           engagement with government counterparts was fundamental. I worked with
@@ -137,7 +137,7 @@ export function DigitalHealthNarrative() {
       </section>
 
       <section className="case-narrative-section">
-        <h2>Scale and evidence</h2>
+        <h2>Scale and Evidence</h2>
         <div className="case-scale case-scale--narrative">
           <div className="metric"><strong>$63M</strong><span>Approximate value of the USAID Digital Health Activity under senior strategic and technical oversight.</span></div>
           <div className="metric"><strong>8,000+</strong><span>Health posts reached by supported digital-health services.</span></div>
@@ -154,7 +154,7 @@ export function DigitalHealthNarrative() {
       </section>
 
       <section className="case-narrative-section">
-        <h2>What this experience taught me</h2>
+        <h2>What This Experience Taught Me</h2>
         <p>
           National digital transformation cannot be managed as a collection of
           technology projects. Technology is only one layer. Underneath it are
@@ -173,7 +173,7 @@ export function DigitalHealthNarrative() {
       </section>
 
       <section className="case-narrative-section">
-        <h2>What this case demonstrates</h2>
+        <h2>What This Case Demonstrates</h2>
         <ul className="plain-list">
           <li>National-scale transformation across multiple systems and institutional actors</li>
           <li>Executive advisory and decision support for government and donor leadership</li>

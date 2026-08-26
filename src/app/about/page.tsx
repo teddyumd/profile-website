@@ -26,7 +26,7 @@ export default function AboutPage() {
     <>
       <section className="page-hero page-hero--bare">
         <div className="container page-hero-inner">
-          <Eyebrow>About me</Eyebrow>
+          <Eyebrow>About Me</Eyebrow>
           <h1 className="visually-hidden">About Tewodros Hailegeberel</h1>
         </div>
       </section>
@@ -130,8 +130,8 @@ export default function AboutPage() {
       <section className="section" id="projects">
         <div className="container">
           <div className="section-heading">
-            <Eyebrow>Things I build</Eyebrow>
-            <h2>I still write code.</h2>
+            <Eyebrow>Things I Build</Eyebrow>
+            <h2>I Still Write Code.</h2>
             <p>
               When something bothers me enough, I still write code for it. Same
               instinct as riding the taxis, smaller scale. These are public.

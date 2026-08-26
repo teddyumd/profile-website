@@ -45,7 +45,7 @@ export function CaseStudyPreview({
         <Heading>{study.title}</Heading>
         <div className="case-preview-story">
           <div>
-            <p className="case-preview-label">Challenge / achievement</p>
+            <p className="case-preview-label">Challenge / Achievement</p>
             <p>{study.summary}</p>
           </div>
           <div>
@@ -53,7 +53,7 @@ export function CaseStudyPreview({
             <p>{study.role}</p>
           </div>
           <div>
-            <p className="case-preview-label">Key business &amp; technical impact</p>
+            <p className="case-preview-label">Key Business &amp; Technical Impact</p>
             <ul className="impact-list">
               {study.impact.map((item) => (
                 <li key={item.label}>
@@ -63,7 +63,7 @@ export function CaseStudyPreview({
             </ul>
           </div>
         </div>
-        <TextLink href={`/work/${study.slug}`}>View more about this experience</TextLink>
+        <TextLink href={`/work/${study.slug}`}>View More about This Experience</TextLink>
       </div>
     </article>
   );

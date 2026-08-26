@@ -16,27 +16,27 @@ const capabilityLead = [
 
 const capabilities = [
   {
-    title: "Turning big ideas into realistic plans",
+    title: "Turning Big Ideas into Realistic Plans",
     body: "I help teams cut through the noise and figure out what to digitize now, what can wait, and what changes staff need to make so the tech doesn\u2019t collect dust.",
   },
   {
-    title: "Connecting systems that don\u2019t talk to each other",
+    title: "Connecting Systems That Don\u2019t Talk to Each Other",
     body: "Utilities and agencies usually have the data already; it is just trapped in separate systems. I help connect asset records, customer information, ERP, SCADA, and field tools so the left hand knows what the right hand is doing.",
   },
   {
-    title: "Making messy data clear and useful",
+    title: "Making Messy Data Clear and Useful",
     body: "Most leaders don\u2019t need more reports. They need quick answers to key management questions. I help clean up fragmented data and build simple dashboards that help people make practical decisions.",
   },
   {
-    title: "Keeping high-stakes projects on track",
+    title: "Keeping High-Stakes Projects on Track",
     body: "I step in to support teams managing big tech investments and vendor contracts. I review budgets, sharpen requirements, catch risks early, and translate complex technical headaches into clear choices for leadership.",
   },
   {
-    title: "Building systems that survive long-term",
+    title: "Building Systems That Survive Long-Term",
     body: "A new system rarely fails because the software breaks; it fails because nobody was trained or supported to run it. I help set up clear roles, daily routines, and local training so the system belongs to the institution, not outside consultants.",
   },
   {
-    title: "Getting different groups talking",
+    title: "Getting Different Groups Talking",
     body: "When a project involves government officials, donors, tech vendors, and field workers, everyone speaks a different language. I help bridge those gaps so everyone can agree on what to do next.",
   },
 ];
@@ -113,7 +113,7 @@ export default function Homepage() {
             <p className="hero-location">Addis Ababa, Ethiopia / Africa</p>
           </div>
           <div className="hero-copy">
-            <h1>Welcome to my website.</h1>
+            <h1>Welcome to My Website.</h1>
             <p className="intro">
               I created this space to give you a better idea of who I am, my
               experiences, my skills, and a few key pieces of work I want to
@@ -122,8 +122,8 @@ export default function Homepage() {
               of how I think and operate on the ground.
             </p>
             <div className="hero-actions">
-              <Button href="/work">Explore my work</Button>
-              <TextLink href="/contact">Connect with me</TextLink>
+              <Button href="/work">Explore My Work</Button>
+              <TextLink href="/contact">Connect with Me</TextLink>
             </div>
             {/* Domains rather than tools: this page is read by people hiring
                 for judgment, not for software proficiency. */}
@@ -179,8 +179,8 @@ export default function Homepage() {
       <section className="section" id="expertise">
         <div className="container">
           <div className="section-heading">
-            <Eyebrow>What I do</Eyebrow>
-            <h2>The kinds of challenges I help tackle.</h2>
+            <Eyebrow>What I Do</Eyebrow>
+            <h2>The Kinds of Challenges I Help Tackle.</h2>
             {capabilityLead.map((para) => (
               <p className="capability-lead" key={para.slice(0, 24)}>
                 {para}
@@ -202,7 +202,7 @@ export default function Homepage() {
           </div>
 
           <div className="why-effective">
-            <h3>Why I enjoy this work</h3>
+            <h3>Why I Enjoy This Work</h3>
             <p className="why-effective-lead">
               My approach comes from being able to talk to leadership about
               strategy and budgets in the morning, and then sit down with
@@ -235,8 +235,8 @@ export default function Homepage() {
       <section className="section ink-surface" id="geospatial" aria-labelledby="gis-heading">
         <div className="container">
           <div className="section-heading">
-            <Eyebrow>Geospatial practice</Eyebrow>
-            <h2 id="gis-heading">What I build with spatial data.</h2>
+            <Eyebrow>Geospatial Practice</Eyebrow>
+            <h2 id="gis-heading">What I Build with Spatial Data.</h2>
             <p>
               Two decades of geospatial work, from writing the automation
               scripts myself to advising utilities and ministries on the
@@ -255,7 +255,7 @@ export default function Homepage() {
           </div>
 
           <div className="stack-block">
-            <h3>Tools I work in</h3>
+            <h3>Tools I Work In</h3>
             <div className="stack-groups">
               {techStack.map((group) => (
                 <div className="stack-group" key={group.label}>
@@ -275,8 +275,8 @@ export default function Homepage() {
       <section className="section" id="institutions">
         <div className="container experience-band">
           <div className="section-heading">
-            <Eyebrow>Institutional experience</Eyebrow>
-            <h2>Turning technical knowledge into public-sector solutions.</h2>
+            <Eyebrow>Institutional Experience</Eyebrow>
+            <h2>Turning Technical Knowledge into Public-Sector Solutions.</h2>
           </div>
           <div className="experience-references" aria-label="Selected institutional experience">
             {experienceReferences.map((reference) => (
@@ -292,8 +292,8 @@ export default function Homepage() {
       <section className="section surface" id="selected-work">
         <div className="container">
           <div className="section-heading">
-            <Eyebrow>Selected work</Eyebrow>
-            <h2 className="visually-hidden">Selected work</h2>
+            <Eyebrow>Selected Work</Eyebrow>
+            <h2 className="visually-hidden">Selected Work</h2>
             <p>
               The work below shows the range of my practice: national digital
               transformation, utility modernization, and building a technology
@@ -323,15 +323,15 @@ export default function Homepage() {
             </ul>
           </div>
 
-          <TextLink href="/work">View full portfolio</TextLink>
+          <TextLink href="/work">View Full Portfolio</TextLink>
         </div>
       </section>
 
       <section className="section ink-surface" id="point-of-view">
         <div className="container point-of-view-grid">
           <div className="section-heading">
-            <Eyebrow>Point of view</Eyebrow>
-            <h2>Technology is only useful when institutions can own and operate it.</h2>
+            <Eyebrow>Point of View</Eyebrow>
+            <h2>Technology Is Only Useful When Institutions Can Own and Operate It.</h2>
           </div>
           <div className="prose prose--light">
             <p>
@@ -352,8 +352,8 @@ export default function Homepage() {
 
       <section className="section cta-section" id="work-together">
         <div className="container section-heading">
-          <Eyebrow>Let&apos;s work together</Eyebrow>
-          <h2>Tell me what you&rsquo;re trying to build.</h2>
+          <Eyebrow>Let&apos;s Work Together</Eyebrow>
+          <h2>Tell Me What You&rsquo;re Trying to Build.</h2>
           <p>
             I work with governments, development organizations, technology
             companies, investors, and institutions tackling complex digital,
@@ -364,7 +364,7 @@ export default function Homepage() {
               <span key={area}>{area}</span>
             ))}
           </div>
-          <Button href="/contact">Start a conversation</Button>
+          <Button href="/contact">Start a Conversation</Button>
         </div>
       </section>
     </>

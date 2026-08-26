@@ -44,7 +44,7 @@ export default function ContactPage() {
       <section className="page-hero">
         <div className="container page-hero-inner">
           <Eyebrow>Contact</Eyebrow>
-          <h1>Working on a difficult systems problem?</h1>
+          <h1>Working on a Difficult Systems Problem?</h1>
           <p>
             I am interested in conversations around leadership, advisory, and
             partnership opportunities involving public-sector transformation,
@@ -55,7 +55,7 @@ export default function ContactPage() {
       </section>
       <section className="section surface">
         <div className="container contact-channels">
-          <h2>Reach me directly</h2>
+          <h2>Reach Me Directly</h2>
           <div className="channel-grid">
             <a className="channel-card" href={`mailto:${site.email}`}>
               <p className="channel-name">Email</p>
@@ -101,13 +101,13 @@ export default function ContactPage() {
         <div className="container contact-grid">
           <div>
             <div className="form-heading">
-              <h2>Send me a message</h2>
+              <h2>Send Me a Message</h2>
               <p>I read everything myself and reply personally.</p>
             </div>
             <ContactForm />
           </div>
           <aside className="contact-side">
-            <h2>Opportunity areas</h2>
+            <h2>Opportunity Areas</h2>
             <div className="opportunity-list">
               {opportunities.map((item) => (
                 <article key={item.title}>
