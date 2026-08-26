@@ -73,7 +73,6 @@ main {
 .section-heading {
   display: grid;
   gap: var(--s4);
-  max-width: 820px;
 }
 
 .section-heading p:not(.eyebrow) {
@@ -1167,7 +1166,6 @@ main {
 .prose {
   display: grid;
   gap: var(--s5);
-  max-width: var(--reading);
 }
 
 .prose p {
