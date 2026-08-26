@@ -99,18 +99,21 @@ export default function Homepage() {
             />
             <div className="hero-identity">
               <p className="hero-name">{site.name}</p>
-              <a
-                className="linkedin-mark"
-                href={site.linkedIn}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Connect with Tewodros Hailegeberel on LinkedIn"
-                title="LinkedIn"
-              >
-                <span aria-hidden="true">in</span>
-              </a>
+              <p className="hero-role">{site.descriptor}</p>
+              <p className="hero-location">
+                Addis Ababa, Ethiopia
+                <a
+                  className="linkedin-mark"
+                  href={site.linkedIn}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Connect with Tewodros Hailegeberel on LinkedIn"
+                  title="LinkedIn"
+                >
+                  <span aria-hidden="true">in</span>
+                </a>
+              </p>
             </div>
-            <p className="hero-location">Addis Ababa, Ethiopia / Africa</p>
           </div>
           <div className="hero-copy">
             <h1>Welcome</h1>
