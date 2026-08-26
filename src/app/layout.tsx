@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Source_Serif_4 } from "next/font/google";
+import { Domine, Manrope } from "next/font/google";
 import "@/styles/globals.css";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -12,9 +12,9 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const sourceSerif = Source_Serif_4({
+const domine = Domine({
   subsets: ["latin"],
-  variable: "--font-source-serif",
+  variable: "--font-domine",
   display: "swap",
 });
 
@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en" className={`${manrope.variable} ${sourceSerif.variable}`}>
+    <html lang="en" className={`${manrope.variable} ${domine.variable}`}>
       <body>
         <a className="skip-link" href="#main-content">
           Skip to content
