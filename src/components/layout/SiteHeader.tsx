@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { navigation } from "@/content/navigation";
+import { Button } from "@/components/ui/Button";
 import { site } from "@/content/site";
 
 export function SiteHeader() {
@@ -98,9 +99,9 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link className="nav-cta" href="/contact" aria-current={pathname === "/contact" ? "page" : undefined}>
+          <Button className="nav-cta" href="/contact">
             {site.cta}
-          </Link>
+          </Button>
         </nav>
         <button
           ref={toggleRef}

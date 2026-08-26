@@ -249,10 +249,24 @@ main {
   color: var(--teal-800);
 }
 
+/* The header CTA is the same .button as "Explore My Work" — solid teal,
+   white, same radius and weight. Only the height comes down, because 52px
+   is a page-level control and this sits in a 76px header. */
 .nav-cta {
-  border: 1px solid var(--ink-950);
-  border-radius: var(--radius-md);
-  padding-inline: var(--s4);
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+/* .site-header a and .desktop-nav a both outrank .button on specificity,
+   which would give the CTA dark text at nav weight and size. This puts the
+   button's own treatment back. */
+.site-header .button,
+.site-header .button:hover,
+.desktop-nav a.button,
+.desktop-nav a.button:hover {
+  color: var(--white);
+  font-size: var(--text-sm);
+  font-weight: 760;
 }
 
 .menu-button {
