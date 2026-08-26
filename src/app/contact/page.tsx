@@ -22,7 +22,11 @@ const opportunities = [
   },
   {
     title: "Public-Sector & Infrastructure Modernization",
-    body: "Programs involving government systems, utilities, enterprise GIS, infrastructure data, governance, or operational modernization.",
+    body: "Programs involving government systems, utilities, infrastructure data, governance, or operational modernization.",
+  },
+  {
+    title: "Enterprise Geospatial Systems",
+    body: "Work involving enterprise GIS architecture, geospatial system design, spatial data management, integration with operational systems, and the data standards that keep it all trustworthy.",
   },
   {
     title: "Technology Partnerships in Africa",
