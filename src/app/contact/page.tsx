@@ -52,20 +52,14 @@ export default function ContactPage() {
       <section className="section surface">
         <div className="container contact-grid">
           <div>
+            <div className="form-heading">
+              <h2>Send me a message</h2>
+              <p>I read everything myself and reply personally.</p>
+            </div>
             <ContactForm />
           </div>
           <aside className="contact-side">
-            <h2>Opportunity areas</h2>
-            <div className="opportunity-list">
-              {opportunities.map((item) => (
-                <article key={item.title}>
-                  <h3>{item.title}</h3>
-                  <p>{item.body}</p>
-                </article>
-              ))}
-            </div>
-            <div className="rule" />
-            <h3>Other ways to reach me</h3>
+            <h2>Reach me directly</h2>
             <div className="channel-grid">
               <a className="channel-card" href={`mailto:${site.email}`}>
                 <p className="channel-name">Email</p>
@@ -106,6 +100,16 @@ export default function ContactPage() {
                   <p className="channel-value">Message me on WhatsApp</p>
                 </span>
               </a>
+            </div>
+            <div className="rule" />
+            <h2>Opportunity areas</h2>
+            <div className="opportunity-list">
+              {opportunities.map((item) => (
+                <article key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </article>
+              ))}
             </div>
             <div className="rule" />
             <p>

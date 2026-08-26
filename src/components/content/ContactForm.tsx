@@ -119,15 +119,17 @@ export function ContactForm() {
         <label htmlFor="website">Leave this field empty</label>
         <input id="website" name="website" tabIndex={-1} autoComplete="off" />
       </p>
-      <div className="form-field">
-        <label htmlFor="name">Name</label>
-        <input id="name" name="name" autoComplete="name" required aria-describedby={errors.name ? "name-error" : undefined} />
-        {errors.name ? <p id="name-error" className="form-error">{errors.name}</p> : null}
-      </div>
-      <div className="form-field">
-        <label htmlFor="email">Email</label>
-        <input id="email" name="email" type="email" autoComplete="email" inputMode="email" required aria-describedby={errors.email ? "email-error" : undefined} />
-        {errors.email ? <p id="email-error" className="form-error">{errors.email}</p> : null}
+      <div className="form-row">
+        <div className="form-field">
+          <label htmlFor="name">Name</label>
+          <input id="name" name="name" autoComplete="name" required aria-describedby={errors.name ? "name-error" : undefined} />
+          {errors.name ? <p id="name-error" className="form-error">{errors.name}</p> : null}
+        </div>
+        <div className="form-field">
+          <label htmlFor="email">Email</label>
+          <input id="email" name="email" type="email" autoComplete="email" inputMode="email" required aria-describedby={errors.email ? "email-error" : undefined} />
+          {errors.email ? <p id="email-error" className="form-error">{errors.email}</p> : null}
+        </div>
       </div>
       <div className="form-field">
         <label htmlFor="organization">Organization</label>

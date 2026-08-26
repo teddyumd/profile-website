@@ -1120,9 +1120,6 @@ main {
 }
 
 .about-grid,
-.contact-grid,
-
-
 .prose {
   display: grid;
   gap: var(--s5);
@@ -2058,8 +2055,10 @@ html {
 }
 
 /* The channels block needs separation from the opportunity list above it */
-.contact-side h3 + .channel-grid { margin-top: var(--s3); }
-.contact-side .rule + h3 { margin-top: var(--s5); }
+.contact-side h2 + .channel-grid { margin-top: var(--s4); }
+.contact-side .rule { margin-top: var(--s7); }
+.contact-side .rule + h2 { margin-top: var(--s5); }
+.contact-side h2 + .opportunity-list { margin-top: var(--s5); }
 
 /* Products — systems built end to end. Dark band, so colours resolve from
    .ink-surface; the shared .stack-label / .stack-items rules apply here too. */
@@ -2223,4 +2222,79 @@ html {
   font-size: var(--text-2xs);
   font-style: italic;
   margin: var(--s1) 0 0;
+}
+
+/* ---------------------------------------------------------------
+   Contact page layout
+   .contact-grid had been grouped with .prose, inheriting a reading-width
+   cap. That forced the form and the side panel into one narrow column and
+   stretched the page past three screens. It is its own layout.
+   --------------------------------------------------------------- */
+.contact-grid {
+  display: grid;
+  gap: var(--s7);
+}
+
+@media (min-width: 900px) {
+  .contact-grid {
+    align-items: start;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: var(--s8);
+  }
+
+  /* The panel is shorter than the form; let it follow the reader down. */
+  .contact-side {
+    position: sticky;
+    top: 108px;
+  }
+}
+
+.contact-side {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Name and email are short — no reason to stack them */
+.form-row {
+  display: grid;
+  gap: var(--s4);
+}
+
+@media (min-width: 560px) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-heading {
+  display: grid;
+  gap: var(--s2);
+  margin-bottom: var(--s5);
+}
+
+.form-heading p {
+  color: var(--slate-600);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+/* Opportunity areas: five paragraphs is a wall. Tighten to a scannable list. */
+.opportunity-list {
+  display: grid;
+  gap: var(--s4);
+}
+
+.opportunity-list article {
+  border-left: 2px solid var(--slate-300);
+  padding-left: var(--s4);
+}
+
+.opportunity-list h3 {
+  font-size: var(--text-md);
+  margin: 0 0 var(--s1);
+}
+
+.opportunity-list p {
+  font-size: var(--text-sm);
+  margin: 0;
 }
