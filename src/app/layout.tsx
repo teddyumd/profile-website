@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: site.name,
     // schema.org expects an actual role here, not a positioning line —
     // site.title is now a tagline, so this is kept separate on purpose.
-    jobTitle: "Senior GIS Engineer",
+    jobTitle: "Digital Transformation and Geospatial Advisor",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Addis Ababa",

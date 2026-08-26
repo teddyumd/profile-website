@@ -104,7 +104,7 @@ export const caseStudies: CaseStudy[] = [
         value: "Senior GIS Engineer / Public-Sector & Utility Advisor",
       },
       { label: "Organization", value: "Adam Smith International" },
-      { label: "Period", value: "2025-Present" },
+      { label: "Period", value: "2025\u20132026" },
       { label: "Location", value: "Ethiopia" },
       { label: "Investment", value: "Approximately $5 million donor-backed modernization initiative" },
       { label: "Efficiency", value: "Approximately 10% reduction in proposed Esri-related costs" },

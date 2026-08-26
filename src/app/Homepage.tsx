@@ -162,7 +162,7 @@ export default function Homepage() {
               health posts, ministry offices, and international donor tables, my
               job was to build alignment, connecting health data, electronic
               medical records, and supply chains into a national system the
-              government could truly own. Today, I continue advising public
+              government could truly own. More recently I have advised public
               utilities and major infrastructure programs on enterprise GIS,
               systems integration, and digital transformation strategy.
             </p>
