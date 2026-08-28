@@ -153,8 +153,8 @@ export default function Homepage() {
             </p>
             <p>
               My approach was shaped by building systems from the ground up.
-              Founding eAdrasha in Addis Ababa &mdash; a location start-up built
-              to map the unmapped &mdash; taught me that technology only
+              Founding eAdrasha in Addis Ababa, a location start-up built
+              to map the unmapped, taught me that technology only
               succeeds when it respects the daily realities of the people using
               it.
             </p>

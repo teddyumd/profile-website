@@ -12,7 +12,7 @@ export const products: Product[] = [
     tagline: "Working out who a location can actually reach",
     status: "Built and working, not yet launched",
     problem:
-      "Site selection normally draws a circle on a map — one kilometre, three, five — and counts the people inside it. Rivers, motorways, and one-way systems do not care about circles, and neither does a customer deciding whether the trip is worth making. The result is a catchment estimate that looks precise and is not.",
+      "Site selection normally draws a circle on a map (one kilometre, three, five) and counts the people inside it. Rivers, motorways, and one-way systems do not care about circles, and neither does a customer deciding whether the trip is worth making. The result is a catchment estimate that looks precise and is not.",
     approach:
       "BizScope replaces the circle with a travel-time polygon built from the actual road network, then counts who lives inside it: population, income, and how both have shifted over the years. It also counts how many competitors are already inside the same polygon, so a location that looks busy on paper can be recognised as saturated before anyone signs a lease.",
     uses: [

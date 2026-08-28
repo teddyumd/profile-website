@@ -31,7 +31,7 @@ export default function ResumePage() {
           <div className="hero-story">
             <p>
               That grew into a career helping governments, utilities, and
-              health programs build systems they can actually run — in
+              health programs build systems they can actually run in
               Maryland, Washington DC, Ethiopia, and Burundi. Along the way I
               founded a company in Addis Ababa to give my city something it
               didn&rsquo;t have: street addresses.

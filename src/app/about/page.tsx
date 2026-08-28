@@ -40,7 +40,7 @@ export default function AboutPage() {
             </p>
             <p>
               I learned this early on in environmental science and
-              GIS&mdash;the art of mapping where a city&rsquo;s pipes, clinics,
+              GIS, the art of mapping where a city&rsquo;s pipes, clinics,
               and communities really are. While working for a county government
               in Maryland, I&rsquo;d take trips home to Addis Ababa and hit a
               constant roadblock: getting anywhere meant relying on word of
@@ -49,7 +49,7 @@ export default function AboutPage() {
             </p>
             <p>So, I set out to connect the dots. I started riding them.</p>
             <p>
-              Sululta, Burayu, Sebeta, Akaki, Summit&mdash;hub to hub, out to
+              Sululta, Burayu, Sebeta, Akaki, Summit: hub to hub, out to
               every edge of the city, logging routes on my phone.
             </p>
             <p>
@@ -62,7 +62,7 @@ export default function AboutPage() {
               backend.
             </p>
             <p>
-              We called it eAdrasha&mdash;a way to use technology to bring a
+              We called it eAdrasha, a way to use technology to bring a
               city closer together.
             </p>
             <p>
@@ -94,8 +94,8 @@ export default function AboutPage() {
             <p>
               Whether working with water utilities, U.S. local governments,
               USAID programs across eight international missions, or serving as
-              Senior Digital Health Advisor for USAID/Ethiopia&mdash;guiding a
-              $63 million national health portfolio&mdash;my focus has remained
+              Senior Digital Health Advisor for USAID/Ethiopia (guiding a
+              $63 million national health portfolio), my focus has remained
               the same. Beyond the budget lines and technical specs, the real
               work is sitting at the table with ministry officials, developers,
               donors, and health workers across 8,000 rural clinics, using

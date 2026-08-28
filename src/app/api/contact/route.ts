@@ -51,7 +51,7 @@ export async function POST(request: Request) {
   const from = process.env.CONTACT_FROM_EMAIL?.trim() || "onboarding@resend.dev";
 
   if (!apiKey) {
-    console.error("RESEND_API_KEY is not set — contact form cannot send.");
+    console.error("RESEND_API_KEY is not set, contact form cannot send.");
     return Response.json(
       { error: "Message could not be sent right now. Please use the email address below." },
       { status: 503 },

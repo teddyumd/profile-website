@@ -2,7 +2,7 @@ import type { CareerEntry } from "@/types/content";
 
 export const career: CareerEntry[] = [
   {
-    period: "Dec 2025 — Jun 2026",
+    period: "Dec 2025 – Jun 2026",
     title: "Senior GIS Engineer",
     organization: "Adam Smith International",
     scope: "Public-Sector & Utility Advisory",
@@ -16,22 +16,21 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "Oct 2025 — Mar 2026",
+    period: "Oct 2025 – Dec 2025",
     title: "Regional GIS & Digital Health Consultant",
     organization: "Palladium",
     scope: "Data.FI Project",
     location: "Burundi / Remote",
-    concurrent: true,
     description:
       "Advised Burundi's Ministry of Health and national partners on the interoperability, governance, and sustainability of national HIV information systems.",
     highlights: [
-      "Designed an interoperability pathway across four national platforms — SIDAInfo, IBIPIMO, eLMIS, and DHIS2 — on an OpenHIM architecture aligned to HL7 FHIR.",
+      "Designed an interoperability pathway across four national platforms (SIDAInfo, IBIPIMO, eLMIS, and DHIS2) on an OpenHIM architecture aligned to HL7 FHIR.",
       "Led the GIS and analytical workstreams that let national and facility-level staff see where services were missing rather than infer it.",
       "Brought government, implementing partners, and technical teams to a shared set of architecture decisions and implementation responsibilities.",
     ],
   },
   {
-    period: "Oct 2022 — Jul 2025",
+    period: "Oct 2022 – Jul 2025",
     title: "Senior Digital Health Advisor",
     organization: "USAID/Ethiopia Mission",
     scope: "Health Office",
@@ -40,14 +39,14 @@ export const career: CareerEntry[] = [
       "Senior adviser and digital health lead for a $63 million national Digital Health Activity, covering strategy, budgets, procurement, performance, risk, interoperability, and sustainability.",
     highlights: [
       "Supported digital health services reaching more than 8,000 health posts and 1,300 health facilities, across community health, EMR, supply chain, workforce, facility registries, pharmaceutical regulation, and health information exchange.",
-      "Built a sustainability model around 15+ youth-led digital enterprises and 100+ young technology professionals servicing roughly 400 health facilities — a locally staffed alternative to permanent external support.",
+      "Built a sustainability model around 15+ youth-led digital enterprises and 100+ young technology professionals servicing roughly 400 health facilities, a locally staffed alternative to permanent external support.",
       "Developed the monitoring framework for the Activity: its theory of change, indicator set, and the baselines performance was measured against.",
       "Oversaw collection, cleaning, and analysis of quantitative and qualitative data in DHIS2, KoboToolbox, and Tableau, and led the data quality audits, partner training, and field supervision behind it.",
       "Reviewed work plans, budgets, vendor proposals, and procurement packages, turning findings into recommendations executives could act on.",
     ],
   },
   {
-    period: "May 2021 — Oct 2022",
+    period: "May 2021 – Oct 2022",
     title: "GIS & Knowledge Management Specialist",
     organization: "USAID/Ethiopia Mission",
     scope: "Program Office",
@@ -60,7 +59,7 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "Nov 2020 — May 2021",
+    period: "Nov 2020 – May 2021",
     title: "GIS / Data Specialist",
     organization: "USAID / Credence Management Solutions",
     scope: "Office of HIV/AIDS",
@@ -73,7 +72,7 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "Mar 2020 — Nov 2020",
+    period: "Mar 2020 – Nov 2020",
     title: "GIS Solution Engineer",
     organization: "Geospatial Consulting Group International",
     scope: "U.S. Census Bureau support",
@@ -85,7 +84,7 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "Sep 2019 — Mar 2020",
+    period: "Sep 2019 – Mar 2020",
     title: "GIS Technical Lead",
     organization: "DC Water and Sewer Authority",
     location: "Washington, DC",
@@ -97,7 +96,7 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "2017 — 2020",
+    period: "2017 – 2020",
     title: "Founder & Chief Executive Officer",
     organization: "eAdrasha",
     location: "Addis Ababa, Ethiopia",
@@ -112,7 +111,7 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "May 2014 — Sep 2019",
+    period: "May 2014 – Sep 2019",
     title: "Senior Geospatial Analyst",
     organization: "Prince George's County Government",
     scope: "Office of Information Technology",
@@ -120,14 +119,14 @@ export const career: CareerEntry[] = [
     description:
       "Led countywide geospatial strategy and enterprise data governance across public works, emergency management, planning, licensing, and citizen services.",
     highlights: [
-      "Established countywide data governance over five years — metadata standards, authoritative data practices, QA/QC, and cross-department data sharing.",
+      "Established countywide data governance over five years: metadata standards, authoritative data practices, QA/QC, and cross-department data sharing.",
       "Served as GIS lead during Emergency Operations Center activations and countywide preparedness exercises.",
       "Received the Prince George's County Fire Chief Special Achievement Award in 2016 for the GIS-enabled Adopt-a-Neighborhood emergency management application.",
       "Supervised GIS professionals and advised department leadership on where enterprise geospatial technology was worth extending.",
     ],
   },
   {
-    period: "Dec 2012 — May 2014",
+    period: "Dec 2012 – May 2014",
     title: "Geospatial Analyst",
     organization: "Deloitte",
     location: "Arlington, Virginia",
@@ -139,7 +138,7 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "Jan 2012 — Nov 2017",
+    period: "Jan 2012 – Nov 2017",
     title: "Senior Geospatial Analyst",
     organization: "Zobel Global Consulting",
     scope: "USAID Haiti, FHI 360 Malawi",
@@ -150,21 +149,21 @@ export const career: CareerEntry[] = [
     highlights: [
       "On USAID's HIFIVE programme in Haiti, collected GPS coordinates for mobile network towers and for every mobile money agent in Croix des Bouquets, then overlaid the two so stakeholders could see where the agent network could realistically grow rather than guess.",
       "Ran the same exercise across two rounds for Airtel and TNM agents on FHI 360's Mobile Money Accelerator Programme in Malawi, and built the web map application the programme used.",
-      "Defined the GIS data management workflow behind both — metadata standards, quality control, and data-sharing protocols — so the mapping outlived the fieldwork that produced it.",
+      "Defined the GIS data management workflow behind both, covering metadata standards, quality control, and data-sharing protocols, so the mapping outlived the fieldwork that produced it.",
     ],
   },
   {
-    period: "Dec 2007 — Dec 2012",
+    period: "Dec 2007 – Dec 2012",
     title: "GIS Analyst II",
     organization: "Greenhorne & O'Mara (now Stantec)",
     location: "Laurel, Maryland",
     description:
       "First enterprise GIS role: production mapping, field data collection, and the databases underneath both.",
     highlights: [
-      "Database administrator for the office-wide enterprise GIS — ArcSDE on SQL Server — alongside ArcGIS Server and the geodatabases behind it.",
+      "Database administrator for the office-wide enterprise GIS, ArcSDE on SQL Server, alongside ArcGIS Server and the geodatabases behind it.",
       "Led testing and quality control of GPS field data, including Trimble post-processing and troubleshooting for field crews.",
       "Maintained the geodatabase behind NPDES Pollution Prevention Plans, doing the field collection as well as the data work.",
-      "Worked alongside environmental teams on botany, wetlands, and wildlife surveys — where the habit of checking data against the ground started.",
+      "Worked alongside environmental teams on botany, wetlands, and wildlife surveys, where the habit of checking data against the ground started.",
     ],
   },
 ];

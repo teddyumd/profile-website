@@ -15,13 +15,13 @@ export type GisCapability = {
 export const gisCapabilities: GisCapability[] = [
   {
     title: "Enterprise GIS",
-    body: "Deploying and running geospatial platforms as production infrastructure — server, portal, and enterprise geodatabases that field crews and control rooms depend on daily.",
+    body: "Deploying and running geospatial platforms as production infrastructure: server, portal, and enterprise geodatabases that field crews and control rooms depend on daily.",
     evidence: "DC Water and Sewer Authority; Prince George’s County; Ethiopian Electric Utility",
   },
   {
     title: "WebGIS & Location Services",
     body: "Building browser-based mapping products and the addressing data underneath them, including in places where no reliable base data existed to begin with.",
-    evidence: "eAdrasha — 50,000 locations mapped; open Addis Ababa geodata",
+    evidence: "eAdrasha: 50,000 locations mapped; open Addis Ababa geodata",
   },
   {
     title: "GIS Automation",
