@@ -55,7 +55,7 @@ export default function WorkPage() {
         <div className="container">
           <div className="section-heading">
             <Eyebrow>Products</Eyebrow>
-            <h2 id="products-heading">Systems I Built End to End.</h2>
+            <h2 id="products-heading">Some Side Projects I Worked On.</h2>
             <p>
               The work above is advisory. These two I designed and built
               myself, from the spatial database up. Both run; neither has
