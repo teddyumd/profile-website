@@ -2390,3 +2390,55 @@ code {
   letter-spacing: 0.01em;
   padding: 0.12em 0.4em;
 }
+
+/* Education — same two-column rhythm as the career timeline above it */
+.education-list {
+  display: grid;
+  gap: var(--s6);
+  margin-top: var(--s6);
+}
+
+.education-entry {
+  border-top: 1px solid rgba(16, 24, 27, 0.16);
+  display: grid;
+  gap: var(--s2) var(--s6);
+  grid-template-columns: minmax(0, 1fr);
+  padding-top: var(--s5);
+}
+
+@media (min-width: 768px) {
+  .education-entry {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+}
+
+.education-period {
+  color: var(--slate-600);
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.education-entry h3 {
+  margin: 0 0 var(--s1);
+}
+
+.education-institution {
+  color: var(--ink-800);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin: 0 0 var(--s3);
+}
+
+.education-note {
+  color: var(--slate-600);
+  font-weight: 500;
+}
+
+.education-focus {
+  color: var(--ink-800);
+  margin: 0;
+  max-width: 68ch;
+}

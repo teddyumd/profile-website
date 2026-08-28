@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TextLink } from "@/components/ui/TextLink";
 import { career } from "@/content/career";
+import { education } from "@/content/education";
 import { site } from "@/content/site";
 import { absoluteUrl } from "@/lib/siteUrl";
 
@@ -115,6 +116,30 @@ export default function ResumePage() {
               </nav>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section className="section" id="education" aria-labelledby="education-heading">
+        <div className="container">
+          <div className="section-heading">
+            <Eyebrow>Education</Eyebrow>
+            <h2 id="education-heading">Where the Groundwork Was Laid.</h2>
+          </div>
+          <div className="education-list">
+            {education.map((item) => (
+              <article className="education-entry" key={item.degree}>
+                <p className="education-period">{item.period}</p>
+                <div>
+                  <h3>{item.degree}</h3>
+                  <p className="education-institution">
+                    {item.institution}
+                    {item.note ? <span className="education-note"> · {item.note}</span> : null}
+                  </p>
+                  <p className="education-focus">{item.focus}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </>

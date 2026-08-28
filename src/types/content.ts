@@ -81,3 +81,12 @@ export type Product = {
   uses: string[];
   stack: { label: string; items: string[] }[];
 };
+
+export type Education = {
+  period: string;
+  degree: string;
+  institution: string;
+  /** Short qualifier such as a GPA, shown beside the institution. */
+  note?: string;
+  focus: string;
+};
