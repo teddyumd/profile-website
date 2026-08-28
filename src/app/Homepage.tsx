@@ -42,10 +42,10 @@ const capabilities = [
 ];
 
 const effectiveQuestions = [
-  "Does this software actually work in places with spotty internet or limited power?",
-  "Are we fixing a real problem, or just making a broken process digital?",
-  "Can local staff run this without hiring expensive outside help every month?",
-  "Who owns this data a year from now?",
+  "Will this system perform under real operating conditions, including intermittent connectivity and unreliable power?",
+  "Are we solving the underlying problem, or digitizing one that is already broken?",
+  "Can local staff operate and maintain this without recurring external support?",
+  "Who owns the data, the licenses, and the source code once the program closes?",
 ];
 
 const experienceReferences = [
@@ -205,21 +205,23 @@ export default function Homepage() {
           </div>
 
           <div className="why-effective">
-            <h3>Why I Enjoy This Work</h3>
+            <h3>Why Institutions Bring Me In</h3>
             <p className="why-effective-lead">
-              My approach comes from being able to talk to leadership about
-              strategy and budgets in the morning, and then sit down with
-              software developers or GIS specialists in the afternoon to figure
-              out why a system isn&rsquo;t working on the ground.
+              I work in both of the conversations that technology programs
+              usually keep apart: strategy, budgets, and governance with
+              leadership, and architecture, data, and field performance with
+              engineers and GIS teams. What is decided in the first
+              conversation is usually what fails in the second.
             </p>
             <p>
-              Having managed donor-funded projects, advised public utilities,
-              and started my own mapping company, I&rsquo;ve seen where these
-              projects tend to get stuck.
+              Having managed donor-funded portfolios, advised public utilities,
+              and built a mapping company of my own, I have seen where these
+              programs stall. It is rarely the technology. It is ownership,
+              capacity, and operating conditions that were never costed.
             </p>
             <p>
-              It helps me ask the simple, practical questions that save teams
-              time and resources:
+              That experience reduces the diligence to a short set of questions
+              that determine whether an investment survives:
             </p>
             <ul className="why-effective-questions">
               {effectiveQuestions.map((q) => (
@@ -227,9 +229,9 @@ export default function Homepage() {
               ))}
             </ul>
             <p>
-              At the end of the day, I don&rsquo;t just help you pick or build
-              technology; I work alongside your team to make sure your
-              organization can actually use it.
+              The outcome I work toward is not a recommendation delivered and
+              left behind. It is a system the organization can govern, staff,
+              and afford long after the engagement ends.
             </p>
           </div>
         </div>
