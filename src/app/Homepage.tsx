@@ -42,10 +42,10 @@ const capabilities = [
 ];
 
 const effectiveQuestions = [
-  "Will this system perform under real operating conditions, including intermittent connectivity and unreliable power?",
-  "Are we solving the underlying problem, or digitizing one that is already broken?",
-  "Can local staff operate and maintain this without recurring external support?",
-  "Who owns the data, the licenses, and the source code once the program closes?",
+  "Will this technology work reliably where connectivity, power, or technical capacity may be limited?",
+  "Are we solving the underlying problem, or simply digitizing an inefficient process?",
+  "Can the organization operate and maintain the system with its existing people and resources?",
+  "Who will own, manage, and improve the data and technology after the project ends?",
 ];
 
 const experienceReferences = [
@@ -205,23 +205,21 @@ export default function Homepage() {
           </div>
 
           <div className="why-effective">
-            <h3>Why Institutions Bring Me In</h3>
+            <h3>Why I Enjoy This Work</h3>
             <p className="why-effective-lead">
-              I work in both of the conversations that technology programs
-              usually keep apart: strategy, budgets, and governance with
-              leadership, and architecture, data, and field performance with
-              engineers and GIS teams. What is decided in the first
-              conversation is usually what fails in the second.
+              I enjoy working at the intersection of strategy, technology, and
+              implementation.
             </p>
             <p>
-              Having managed donor-funded portfolios, advised public utilities,
-              and built a mapping company of my own, I have seen where these
-              programs stall. It is rarely the technology. It is ownership,
-              capacity, and operating conditions that were never costed.
+              Having managed donor-funded programs, advised public institutions
+              and utilities, and built my own geospatial business, I have seen
+              a consistent pattern: technology projects rarely struggle because
+              of technology alone. They struggle when the solution does not fit
+              the institution, the operating environment, or the people
+              expected to use and sustain it.
             </p>
             <p>
-              That experience reduces the diligence to a short set of questions
-              that determine whether an investment survives:
+              That experience has taught me to ask practical questions early:
             </p>
             <ul className="why-effective-questions">
               {effectiveQuestions.map((q) => (
@@ -229,9 +227,19 @@ export default function Homepage() {
               ))}
             </ul>
             <p>
-              The outcome I work toward is not a recommendation delivered and
-              left behind. It is a system the organization can govern, staff,
-              and afford long after the engagement ends.
+              These questions may seem simple, but answering them well can save
+              organizations significant time, money, and frustration.
+            </p>
+            <p>
+              My role is not simply to recommend or build technology. I work
+              with teams to connect strategy, people, processes, data, and
+              technology so that what gets implemented can actually be used,
+              managed, and sustained.
+            </p>
+            <p>
+              That is the part of the work I find most rewarding: helping
+              organizations move from having technology to having technology
+              that genuinely works for them.
             </p>
           </div>
         </div>
