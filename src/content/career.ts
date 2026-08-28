@@ -86,7 +86,14 @@ export const career: CareerEntry[] = [
     description:
       "Translated federal requirements into working technical concepts across population mapping, emergency response, and enterprise GIS.",
     highlights: [
-      "Combined enterprise GIS, cloud environments, dashboards, and SQL/Python workflows into solution designs public-sector clients could actually operate.",
+      "Designed enterprise GIS solutions for federal-government requirements spanning ArcGIS Enterprise, cloud infrastructure, databases, web applications, dashboards, Python automation, and SQL.",
+      "Gathered business and technical requirements and translated them into scalable GIS architecture, applications, data models, and implementation approaches.",
+      "Supported integration between GIS applications, enterprise datasets, APIs, databases, analytical tools, and automated processing workflows.",
+      "Developed Python and SQL automation to improve repeatability, data processing, and operational efficiency within enterprise GIS workflows.",
+      "Supported technical evaluation and troubleshooting of GIS applications, data services, database workflows, and system configurations.",
+      "Worked within multidisciplinary technical teams to coordinate GIS requirements with infrastructure, database, application, and cloud environments.",
+      "Developed enterprise mapping and decision-support capabilities supporting population analysis, emergency response, and government operations.",
+      "Contributed technical documentation and knowledge transfer supporting solution adoption and maintainability.",
     ],
   },
   {
