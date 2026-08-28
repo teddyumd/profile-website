@@ -1738,25 +1738,17 @@ main {
 .resume-panel { border-top: 1px solid rgba(16, 24, 27, 0.16); padding-top: var(--s5); }
 .resume-panel-inner { display: grid; gap: var(--s6); position: sticky; top: 110px; }
 .resume-download { display: grid; gap: var(--s3); justify-items: start; }
-.resume-download-label, .resume-jump-label {
+.resume-download-label {
   color: var(--ink-950); font-size: var(--text-2xs); font-weight: 760;
   letter-spacing: 0.08em; margin: 0; text-transform: uppercase;
 }
 .resume-download .note { margin: 0; }
 
-.resume-jump ol { display: grid; gap: var(--s3); list-style: none; margin: var(--s3) 0 0; padding: 0; }
-.resume-jump a { display: grid; gap: 1px; text-decoration: none; }
-.resume-jump-org { font-size: var(--text-xs); font-weight: 700; }
-.resume-jump-period { color: var(--slate-600); font-size: var(--text-2xs); }
-.resume-jump a:hover .resume-jump-org { text-decoration: underline; }
 
 
 @media (max-width: 1199px) {
   .resume-grid { gap: var(--s6); grid-template-columns: minmax(0, 1fr); }
   .resume-panel-inner { position: static; }
-  .resume-jump ol {
-    display: flex; flex-wrap: wrap; gap: var(--s3) var(--s5);
-  }
 }
 
 @media (max-width: 767px) {

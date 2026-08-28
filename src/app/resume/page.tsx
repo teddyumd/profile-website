@@ -90,7 +90,7 @@ export default function ResumePage() {
             })}
           </div>
 
-          <aside className="resume-panel" aria-label="Resume download and contents">
+          <aside className="resume-panel" aria-label="Resume download">
             <div className="resume-panel-inner">
               <div className="resume-download">
                 <p className="resume-download-label">Full resume</p>
@@ -100,20 +100,6 @@ export default function ResumePage() {
                 </a>
                 <p className="note">{resumeMeta}</p>
               </div>
-
-              <nav className="resume-jump" aria-label="Jump to role">
-                <p className="resume-jump-label">Roles</p>
-                <ol>
-                  {career.map((entry) => (
-                    <li key={entry.organization + entry.period}>
-                      <a href={`#${slugify(`${entry.organization}-${entry.period}`)}`}>
-                        <span className="resume-jump-org">{entry.organization}</span>
-                        <span className="resume-jump-period">{entry.period}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              </nav>
             </div>
           </aside>
         </div>
