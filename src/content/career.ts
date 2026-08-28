@@ -127,17 +127,44 @@ export const career: CareerEntry[] = [
     ],
   },
   {
-    period: "2012 — 2017",
-    title: "Geospatial Consultant",
-    organization: "International Development Assignments",
-    scope: "USAID Haiti, FHI 360 Malawi, and other programmes",
-    location: "International",
+    period: "Dec 2012 — May 2014",
+    title: "Geospatial Analyst",
+    organization: "Deloitte",
+    location: "Arlington, Virginia",
+    description:
+      "Geospatial consulting to federal agencies, on the kind of problem that looks like a business question until you put it on a map.",
+    highlights: [
+      "Lead geospatial analyst on the USPS Workforce Optimization stream, turning an employee reassignment model into maps and an executive report that showed what the model actually meant under real constraints such as commute time.",
+      "Built the geospatial demonstrations Deloitte used with visiting Census Bureau clients, across both open-source and commercial tools, and trained Census staff on the systems they would go on to run themselves.",
+    ],
+  },
+  {
+    period: "Jan 2012 — Nov 2017",
+    title: "Senior Geospatial Analyst",
+    organization: "Zobel Global Consulting",
+    scope: "USAID Haiti, FHI 360 Malawi",
+    location: "Silver Spring, Maryland / International",
     concurrent: true,
     description:
-      "Geospatial and information-management support to development and public health programmes, including assignments in Haiti and Malawi.",
+      "Geospatial lead on mobile money programmes in Haiti and Malawi, mapping the physical infrastructure that digital financial services quietly depend on.",
     highlights: [
-      "Applied GIS, digital mapping, information management, and data governance to implementation problems in low-resource settings.",
-      "Built local analytical capacity alongside the deliverables, so the work did not leave with the consultant.",
+      "On USAID's HIFIVE programme in Haiti, collected GPS coordinates for mobile network towers and for every mobile money agent in Croix des Bouquets, then overlaid the two so stakeholders could see where the agent network could realistically grow rather than guess.",
+      "Ran the same exercise across two rounds for Airtel and TNM agents on FHI 360's Mobile Money Accelerator Programme in Malawi, and built the web map application the programme used.",
+      "Defined the GIS data management workflow behind both — metadata standards, quality control, and data-sharing protocols — so the mapping outlived the fieldwork that produced it.",
+    ],
+  },
+  {
+    period: "Dec 2007 — Dec 2012",
+    title: "GIS Analyst II",
+    organization: "Greenhorne & O'Mara (now Stantec)",
+    location: "Laurel, Maryland",
+    description:
+      "First enterprise GIS role: production mapping, field data collection, and the databases underneath both.",
+    highlights: [
+      "Database administrator for the office-wide enterprise GIS — ArcSDE on SQL Server — alongside ArcGIS Server and the geodatabases behind it.",
+      "Led testing and quality control of GPS field data, including Trimble post-processing and troubleshooting for field crews.",
+      "Maintained the geodatabase behind NPDES Pollution Prevention Plans, doing the field collection as well as the data work.",
+      "Worked alongside environmental teams on botany, wetlands, and wildlife surveys — where the habit of checking data against the ground started.",
     ],
   },
 ];
