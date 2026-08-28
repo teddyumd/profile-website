@@ -2484,3 +2484,34 @@ code {
   margin: 0;
   max-width: 68ch;
 }
+
+/* Scheduling block on the contact page. Sits above the channel cards because
+   booking a time is the action most visitors are actually after; the cards
+   stay for people who want a slower channel. */
+.schedule-block {
+  align-items: center;
+  border: 1px solid var(--slate-300);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s4);
+  justify-content: space-between;
+  margin-bottom: var(--s5);
+  padding: var(--s5);
+}
+
+.schedule-title {
+  font-size: var(--text-md);
+  font-weight: 750;
+  margin: 0 0 4px;
+}
+
+.schedule-body {
+  color: var(--slate-600);
+  margin: 0;
+  max-width: 46ch;
+}
+
+@media (max-width: 599px) {
+  .schedule-block { align-items: flex-start; flex-direction: column; }
+}

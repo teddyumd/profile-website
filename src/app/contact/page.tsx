@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/content/ContactForm";
+import { ScheduleButton } from "@/components/content/ScheduleButton";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { site } from "@/content/site";
 import { absoluteUrl } from "@/lib/siteUrl";
@@ -56,6 +57,18 @@ export default function ContactPage() {
       <section className="section surface">
         <div className="container contact-channels">
           <h2>Reach Me Directly</h2>
+          {site.calendly && (
+            <div className="schedule-block">
+              <div>
+                <p className="schedule-title">Book a Time</p>
+                <p className="schedule-body">
+                  Pick a slot that works for you and the invitation lands in
+                  both calendars. No back-and-forth email needed.
+                </p>
+              </div>
+              <ScheduleButton url={site.calendly} />
+            </div>
+          )}
           <div className="channel-grid">
             <a className="channel-card" href={`mailto:${site.email}`}>
               <p className="channel-name">Email</p>

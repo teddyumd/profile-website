@@ -12,6 +12,9 @@ export const site = {
   // kept separate so the link and the label can never drift apart.
   whatsapp: "251929123944",
   whatsappDisplay: "+251 929 123 944",
+  // Public Calendly booking link. Leave empty to hide the scheduling block
+  // entirely; nothing else needs changing.
+  calendly: "",
   github: "https://github.com/teddyumd",
   linkedIn: "https://www.linkedin.com/in/thailegeberel/",
   metadata: {
