@@ -13,6 +13,9 @@ export const career: CareerEntry[] = [
       "Cut proposed Esri licensing costs by around 10% through technical restructuring and commercial negotiation, without giving up any required enterprise capability.",
       "Defined the integration requirements between GIS, ERP/SAP, SCADA, outage management, metering, customer, and asset-management systems, so the utility could stop running them as separate islands.",
       "Assessed data ownership, workflows, governance gaps, and staff capacity before deployment rather than after it, which is where modernization programmes usually fail.",
+      "Reviewed ArcGIS Utility Network requirements and advised stakeholders on architecture considerations, data readiness, governance, integration dependencies, and operational workflow requirements.",
+      "Assessed utility GIS modernization requirements with consideration for Utility Network topology, validation, editing, tracing, data quality, and enterprise-system integration.",
+      "Supported utility stakeholders in defining requirements and readiness considerations for migration toward a modern ArcGIS Enterprise and Utility Network environment.",
     ],
   },
   {
@@ -56,6 +59,9 @@ export const career: CareerEntry[] = [
     highlights: [
       "Produced the Mission's enterprise data strategies, dashboards, spatial analyses, metadata standards, and governance frameworks.",
       "Shaped the design of what became the $63 million Digital Health Activity, contributing the evidence, technical requirements, and stakeholder priorities behind it.",
+      "Served as a technical bridge across GIS, infrastructure, databases, applications, security, and business operations.",
+      "Translated operational requirements into scalable enterprise GIS architecture, data models, workflows, and technical specifications.",
+      "Supported production GIS environments through troubleshooting, performance analysis, data-quality controls, and coordination across technical teams.",
     ],
   },
   {
