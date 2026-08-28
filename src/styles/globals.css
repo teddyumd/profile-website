@@ -2021,6 +2021,54 @@ main {
   }
 }
 
+/* Between 1180px and the full rail's breakpoint there is no room for the
+   labels, but there is still room in the gutter for the markers. The reader
+   keeps the position cue and the section links; only the words are dropped.
+   Below 1180px the gutter closes entirely and the rail stays hidden. */
+@media (min-width: 1180px) and (max-width: 1339px) {
+  .section-rail {
+    display: grid;
+    gap: 10px;
+    left: max(10px, calc((100vw - var(--container)) / 2 - 30px));
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 40;
+  }
+
+  .section-rail-title,
+  .section-rail-count,
+  .section-rail-track {
+    display: none;
+  }
+
+  .section-rail-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .section-rail-list a {
+    background: var(--slate-300);
+    border-radius: 50%;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+    text-indent: -999em;
+    transition: background 0.16s ease, transform 0.16s ease;
+    white-space: nowrap;
+    width: 8px;
+  }
+
+  .section-rail-list a.is-reached { background: var(--ink-800); }
+
+  .section-rail-list a[aria-current="true"] {
+    background: var(--teal-700);
+    transform: scale(1.4);
+  }
+
+  .section-rail-list a:hover { background: var(--teal-700); }
+}
+
 .section-rail-title {
   color: var(--slate-600);
   font-size: var(--text-3xs);
