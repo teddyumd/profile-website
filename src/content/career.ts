@@ -118,8 +118,13 @@ export const career: CareerEntry[] = [
     description:
       "Led enterprise geospatial technology across GIS, IT, engineering, and field operations for a major water and wastewater utility.",
     highlights: [
-      "Ran ArcGIS Enterprise, Server, Portal, geodatabases, web services, and field applications as production infrastructure for two critical networks.",
-      "Automated system-management workflows and improved the reliability of the information crews depended on daily.",
+      "Led enterprise GIS and data support within a major water and wastewater utility, coordinating technical requirements across IT, engineering, field operations, and operational teams.",
+      "Supported business-critical GIS applications, enterprise spatial data, web services, and information workflows used by engineering and field personnel.",
+      "Provided technical leadership for GIS platform, application, database, and data issues and coordinated troubleshooting across technical and operational teams.",
+      "Supported enterprise geospatial data-management and multi-user editing workflows to maintain reliable infrastructure information.",
+      "Worked with engineering and operational stakeholders to translate business requirements into GIS data, application, and workflow improvements.",
+      "Supported maintenance and evolution of corporate GIS capabilities within an operational utility environment where system reliability and authoritative data were important to daily operations.",
+      "Provided technical support and knowledge transfer to users working with enterprise GIS tools and operational workflows.",
     ],
   },
   {
