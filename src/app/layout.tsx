@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Domine, Manrope } from "next/font/google";
 import "@/styles/globals.css";
+import { CalendlyBadge } from "@/components/content/CalendlyBadge";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { site } from "@/content/site";
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        {site.calendly ? <CalendlyBadge url={site.calendly} /> : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
