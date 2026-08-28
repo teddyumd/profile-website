@@ -131,10 +131,12 @@ export const career: CareerEntry[] = [
     description:
       "Founded and led Ethiopia's first digital addressing and location-intelligence platform, built for a city with no street addresses.",
     highlights: [
-      "Grew the company to 40+ people across software, data engineering, field operations, quality assurance, product, and partnerships.",
-      "Reached 25,000+ users within six months, on a base of 50,000 locations tagged by hand.",
-      "Improved platform performance by roughly 35% through cloud optimization, tile caching, and load balancing.",
-      "Built out business search, routing, geocoding, and location-data APIs serving navigation, logistics, government, and urban services.",
+      "Founded and led a location-technology company, taking a digital product from concept through requirements, development, testing, deployment, user feedback, and continuous improvement.",
+      "Worked directly with software developers to translate customer and operational needs into product requirements, prioritized features, application workflows, and technical capabilities.",
+      "Built and managed a 40+ person multidisciplinary organization across software development, data, field operations, quality assurance, partnerships, customer engagement, and product delivery.",
+      "Reached more than 25,000 users within six months and developed partnerships with government organizations, businesses, transport companies, delivery providers, and other institutions.",
+      "Developed capabilities supporting business search, digital addressing, routing, geocoding, APIs, and reusable location-data services.",
+      "Established feedback loops between users, field teams, customer-facing staff, and software developers to improve functionality and product usability.",
     ],
   },
   {
