@@ -144,36 +144,39 @@ export default function Homepage() {
           <div className="prose">
             <p>
               I am a digital transformation, digital health, and geospatial
-              technology leader with over 20 years of experience working alongside
-              governments, global donors, tech entrepreneurs, and local
-              communities across Africa and the United States. At my core, my focus is
-              simple: I help turn complex technology investments into reliable,
-              scalable systems that people can actually use, govern, and sustain
-              long after the funding stops.
+              technology leader with more than 20 years of experience working
+              with governments, global donors, technology entrepreneurs, and
+              communities across Africa and the United States.
             </p>
             <p>
-              My approach was shaped by building systems from the ground up.
-              Founding eAdrasha in Addis Ababa, a location start-up built
-              to map the unmapped, taught me that technology only
-              succeeds when it respects the daily realities of the people using
-              it.
+              My focus is straightforward: helping organizations turn complex
+              technology investments into practical, scalable systems that
+              people can use, manage, and sustain.
             </p>
             <p>
-              I brought that same human-centered discipline to USAID/Ethiopia as
-              Senior Digital Health Advisor, serving as the senior digital health
-              lead for a $63 million national health portfolio. Across rural
-              health posts, ministry offices, and international donor tables, my
-              job was to build alignment, connecting health data, electronic
-              medical records, and supply chains into a national system the
-              government could truly own. More recently I have advised public
-              utilities and major infrastructure programs on enterprise GIS,
-              systems integration, and digital transformation strategy.
+              My perspective was shaped by building systems from the ground up.
+              Founding eAdrasha in Addis Ababa, a location-based start-up
+              focused on mapping places that were often missing from
+              conventional maps, reinforced an important lesson for me:
+              technology works best when it reflects the realities of the
+              people and institutions expected to use it.
             </p>
             <p>
-              Based in Addis Ababa with U.S. citizenship, I am drawn to senior
-              Africa-focused leadership roles where strategy, technology, and
-              genuine human impact come together. Take a look around, and if you
-              are building systems that matter, I would love to connect.
+              I carried that same approach into my work at USAID/Ethiopia,
+              where I served as Senior Digital Health Advisor and supported a
+              $63 million national digital health portfolio. My role required
+              working across government, health facilities, implementing
+              partners, and development partners to strengthen the systems,
+              governance, and coordination behind digital health investments.
+            </p>
+            <p>
+              More recently, I have advised public utilities and major
+              infrastructure programs on enterprise GIS, systems integration,
+              and digital transformation strategy.
+            </p>
+            <p>
+              If you are working on systems that need to move from concept to
+              sustainable implementation, I would be glad to connect.
             </p>
           </div>
         </div>
