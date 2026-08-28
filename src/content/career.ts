@@ -27,9 +27,16 @@ export const career: CareerEntry[] = [
     description:
       "Advised Burundi's Ministry of Health and national partners on the interoperability, governance, and sustainability of national HIV information systems.",
     highlights: [
-      "Designed an interoperability pathway across four national platforms (SIDAInfo, IBIPIMO, eLMIS, and DHIS2) on an OpenHIM architecture aligned to HL7 FHIR.",
-      "Led the GIS and analytical workstreams that let national and facility-level staff see where services were missing rather than infer it.",
-      "Brought government, implementing partners, and technical teams to a shared set of architecture decisions and implementation responsibilities.",
+      "Advised Burundi's Ministry of Health and national technical partners on digital health architecture, interoperability, data governance, analytics, and sustainable integration of national health information systems.",
+      "Assessed existing workflows and system relationships across SIDAInfo, IBIPIMO, eLMIS, DHIS2, and OpenHIM and translated findings into integration requirements, architecture decisions, implementation actions, and technical documentation.",
+      "Co-developed interface control documentation and functional requirements for OpenHIM-based interoperability, defining expected data exchanges, system responsibilities, integration dependencies, and standards-based approaches including HL7 FHIR where appropriate.",
+      "Worked with government and technical stakeholders to clarify data flows, system ownership, integration responsibilities, readiness requirements, and implementation sequencing for national interoperability activities.",
+      "Translated program and user requirements into technical specifications and practical implementation recommendations that software, interoperability, and Ministry teams could use to move from architecture discussions into implementation.",
+      "Supported data-pipeline and synchronization planning between clinical, laboratory, logistics, and national reporting systems to improve the flow and use of health information across platforms.",
+      "Tracked architecture decisions, technical risks, system readiness, responsibilities, dependencies, and implementation actions to strengthen follow-through and reduce ambiguity between participating teams.",
+      "Led GIS, dashboard, and analytical work that integrated program and geographic information to identify service gaps and support national and facility-level decision-making.",
+      "Produced technical guidance, architecture documentation, decision-support materials, and stakeholder briefings that translated complex system issues into clear actions for Ministry and program leadership.",
+      "Supported institutional capacity by working with national technical teams on system architecture, data governance, interoperability concepts, analytical use, and long-term ownership of digital health capabilities.",
     ],
   },
   {
@@ -46,6 +53,13 @@ export const career: CareerEntry[] = [
       "Developed the monitoring framework for the Activity: its theory of change, indicator set, and the baselines performance was measured against.",
       "Oversaw collection, cleaning, and analysis of quantitative and qualitative data in DHIS2, KoboToolbox, and Tableau, and led the data quality audits, partner training, and field supervision behind it.",
       "Reviewed work plans, budgets, vendor proposals, and procurement packages, turning findings into recommendations executives could act on.",
+      "Provided senior technical leadership for national digital health investments, translating Ministry of Health priorities, frontline requirements, and implementation constraints into system requirements, technical guidance, rollout plans, and program decisions.",
+      "Reviewed digital health solution architecture, interoperability approaches, infrastructure requirements, data governance, hosting models, security considerations, and implementation readiness across national platforms including eCHIS, EMR, DHIS2, eLMIS, workforce systems, regulatory systems, facility registries, and health information exchange.",
+      "Worked with Ministry of Health leaders, implementing partners, software teams, donors, universities, and local technology organizations to align digital tools with national health information architecture, data-governance requirements, interoperability standards, and long-term government ownership.",
+      "Translated field-level needs, user feedback, operational workflows, and government requirements into functional requirements, technical recommendations, procurement inputs, acceptance criteria, and implementation priorities for digital health teams.",
+      "Supported interoperability and data-exchange planning across national health systems, including APIs, health information exchange, shared data standards, and integration approaches designed to reduce fragmentation between platforms.",
+      "Reviewed implementation plans, testing approaches, deployment readiness, performance indicators, technical deliverables, risks, and corrective actions to strengthen quality and reliability during national system rollout and scale-up.",
+      "Advised on emerging technologies, including AI-enabled analytics and digital health innovation, assessing potential value against government priorities, data governance, maintainability, infrastructure constraints, and implementation risk.",
     ],
   },
   {
