@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const credentials = [
-  "MSc Geospatial Information Sciences, University of Maryland (2010)",
+  "MA Geospatial Information Sciences, University of Maryland (2010)",
   "BSc Environmental Science, University of Maryland (2007)",
   "Certified GIS Professional (GISP)",
   "Languages: English and Amharic",

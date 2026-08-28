@@ -3,7 +3,7 @@ import type { Education } from "@/types/content";
 export const education: Education[] = [
   {
     period: "Aug 2008 — May 2010",
-    degree: "Master of Science, Geospatial Information Sciences",
+    degree: "Master of Art, Geospatial Information Sciences",
     institution: "University of Maryland, College Park",
     note: "GPA 3.9 / 4.0",
     focus:

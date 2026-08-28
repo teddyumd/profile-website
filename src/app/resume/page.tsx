@@ -123,7 +123,7 @@ export default function ResumePage() {
         <div className="container">
           <div className="section-heading">
             <Eyebrow>Education</Eyebrow>
-            <h2 id="education-heading">Where the Groundwork Was Laid.</h2>
+            <h2 id="education-heading" className="visually-hidden">Education</h2>
           </div>
           <div className="education-list">
             {education.map((item) => (
