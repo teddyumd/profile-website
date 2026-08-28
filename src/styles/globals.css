@@ -1643,9 +1643,11 @@ main {
 .page-hero--tight { padding-block: var(--s7) var(--s6); }
 .lede { font-size: var(--text-md); max-width: 720px; }
 
+/* Both paragraphs inherit the hero's lead size from .page-hero p; the only
+   job left here is killing the default paragraph margin, since the grid
+   gap already spaces them. */
 .hero-story { display: grid; gap: var(--s4); max-width: 640px; }
-.hero-story p { font-size: var(--text-md); margin: 0; }
-.hero-story p:first-child { font-size: var(--text-md); }
+.hero-story p { margin: 0; }
 
 
 .resume-grid {
