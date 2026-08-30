@@ -67,14 +67,6 @@ const engagementAreas = [
   "Speaking & collaboration",
 ];
 
-const impactFigures = [
-  { value: "20+ yrs", label: "Across government, utilities, and health systems" },
-  { value: "$63M", label: "National digital health portfolio advised" },
-  { value: "8,000+", label: "Health posts reached by supported services" },
-  { value: "25,000", label: "Users in six months at eAdrasha" },
-  { value: "40+", label: "People hired and led in Addis Ababa" },
-];
-
 const railSections = [
   { id: "welcome", label: "Welcome" },
   { id: "introduction", label: "Introduction" },
@@ -139,19 +131,6 @@ export default function Homepage() {
               ))}
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section className="section section--impact" id="impact">
-        <div className="container">
-          <dl className="impact-strip">
-            {impactFigures.map((figure) => (
-              <div key={figure.label}>
-                <dt>{figure.value}</dt>
-                <dd>{figure.label}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </section>
 

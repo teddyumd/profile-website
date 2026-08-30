@@ -79,105 +79,113 @@ export default function AboutPage() {
               standing in the street. When a local business moved or a road
               changed, we updated it that week.
             </p>
-            <p>
-              Growing eAdrasha to 40 people and 25,000 users taught me what true
-              problem-solving takes:
-            </p>
-            <ul>
-              <li>Data quality requires constant, hands-on care.</li>
-              <li>
-                Technology must adapt to human behavior, not the other way
-                around.
-              </li>
-              <li>
-                A beautifully designed tool is useless if it doesn&rsquo;t leave
-                people better off and empowered to run it themselves.
-              </li>
-            </ul>
-            <p>
-              I&rsquo;ve carried that philosophy into every system I&rsquo;ve
-              built since.
-            </p>
-            <p>
-              Whether working with water utilities, U.S. local governments,
-              USAID programs across eight international missions, or serving as
-              Senior Digital Health Advisor for USAID/Ethiopia (guiding a
-              $63 million national health portfolio), my focus has remained
-              the same. Beyond the budget lines and technical specs, the real
-              work is sitting at the table with ministry officials, developers,
-              donors, and health workers across 8,000 rural clinics, using
-              technology to link them together so the solution outlasts the
-              project.
-            </p>
-            <p>
-              At the end of the day, I build systems, but I design for people. I
-              use technology to fill in the missing pieces so communities,
-              institutions, and the data between them can finally connect.
-            </p>
-            <h2>In Practice</h2>
-            <p>
-              My perspective was shaped by building systems from the ground up.
-              Founding eAdrasha in Addis Ababa, a location-based start-up
-              focused on mapping places that were often missing from
-              conventional maps, reinforced an important lesson for me:
-              technology works best when it reflects the realities of the
-              people and institutions expected to use it.
-            </p>
-            <p>
-              I carried that same approach into my work at USAID/Ethiopia,
-              where I served as Senior Digital Health Advisor and supported a
-              $63 million national digital health portfolio. My role required
-              working across government, health facilities, implementing
-              partners, and development partners to strengthen the systems,
-              governance, and coordination behind digital health investments.
-            </p>
-            <p>
-              More recently, I have advised public utilities and major
-              infrastructure programs on enterprise GIS, systems integration,
-              and digital transformation strategy.
-            </p>
-            <p>
-              If you are working on systems that need to move from concept to
-              sustainable implementation, I would be glad to connect.
-            </p>
-            <h2>How I Work</h2>
-            <div className="why-effective">
-              <p className="why-effective-lead">
-                I enjoy working at the intersection of strategy, technology, and
-                implementation.
-              </p>
+            <details className="read-more">
+              <summary>
+                <span className="read-more-open">Read more.</span>
+                <span className="read-more-close">Show less.</span>
+              </summary>
+              <div className="read-more-body">
               <p>
-                Having managed donor-funded programs, advised public institutions
-                and utilities, and built my own geospatial business, I have seen
-                a consistent pattern: technology projects rarely struggle because
-                of technology alone. They struggle when the solution does not fit
-                the institution, the operating environment, or the people
-                expected to use and sustain it.
+                Growing eAdrasha to 40 people and 25,000 users taught me what true
+                problem-solving takes:
               </p>
-              <p>
-                That experience has taught me to ask practical questions early:
-              </p>
-              <ul className="why-effective-questions">
-                {effectiveQuestions.map((q) => (
-                  <li key={q}>{q}</li>
-                ))}
+              <ul>
+                <li>Data quality requires constant, hands-on care.</li>
+                <li>
+                  Technology must adapt to human behavior, not the other way
+                  around.
+                </li>
+                <li>
+                  A beautifully designed tool is useless if it doesn&rsquo;t leave
+                  people better off and empowered to run it themselves.
+                </li>
               </ul>
               <p>
-                These questions may seem simple, but answering them well can save
-                organizations significant time, money, and frustration.
+                I&rsquo;ve carried that philosophy into every system I&rsquo;ve
+                built since.
               </p>
               <p>
-                My role is not simply to recommend or build technology. I work
-                with teams to connect strategy, people, processes, data, and
-                technology so that what gets implemented can actually be used,
-                managed, and sustained.
+                Whether working with water utilities, U.S. local governments,
+                USAID programs across eight international missions, or serving as
+                Senior Digital Health Advisor for USAID/Ethiopia (guiding a
+                $63 million national health portfolio), my focus has remained
+                the same. Beyond the budget lines and technical specs, the real
+                work is sitting at the table with ministry officials, developers,
+                donors, and health workers across 8,000 rural clinics, using
+                technology to link them together so the solution outlasts the
+                project.
               </p>
               <p>
-                That is the part of the work I find most rewarding: helping
-                organizations move from having technology to having technology
-                that genuinely works for them.
+                At the end of the day, I build systems, but I design for people. I
+                use technology to fill in the missing pieces so communities,
+                institutions, and the data between them can finally connect.
               </p>
-            </div>
+              <h2>In Practice</h2>
+              <p>
+                My perspective was shaped by building systems from the ground up.
+                Founding eAdrasha in Addis Ababa, a location-based start-up
+                focused on mapping places that were often missing from
+                conventional maps, reinforced an important lesson for me:
+                technology works best when it reflects the realities of the
+                people and institutions expected to use it.
+              </p>
+              <p>
+                I carried that same approach into my work at USAID/Ethiopia,
+                where I served as Senior Digital Health Advisor and supported a
+                $63 million national digital health portfolio. My role required
+                working across government, health facilities, implementing
+                partners, and development partners to strengthen the systems,
+                governance, and coordination behind digital health investments.
+              </p>
+              <p>
+                More recently, I have advised public utilities and major
+                infrastructure programs on enterprise GIS, systems integration,
+                and digital transformation strategy.
+              </p>
+              <p>
+                If you are working on systems that need to move from concept to
+                sustainable implementation, I would be glad to connect.
+              </p>
+              <h2>How I Work</h2>
+              <div className="why-effective">
+                <p className="why-effective-lead">
+                  I enjoy working at the intersection of strategy, technology, and
+                  implementation.
+                </p>
+                <p>
+                  Having managed donor-funded programs, advised public institutions
+                  and utilities, and built my own geospatial business, I have seen
+                  a consistent pattern: technology projects rarely struggle because
+                  of technology alone. They struggle when the solution does not fit
+                  the institution, the operating environment, or the people
+                  expected to use and sustain it.
+                </p>
+                <p>
+                  That experience has taught me to ask practical questions early:
+                </p>
+                <ul className="why-effective-questions">
+                  {effectiveQuestions.map((q) => (
+                    <li key={q}>{q}</li>
+                  ))}
+                </ul>
+                <p>
+                  These questions may seem simple, but answering them well can save
+                  organizations significant time, money, and frustration.
+                </p>
+                <p>
+                  My role is not simply to recommend or build technology. I work
+                  with teams to connect strategy, people, processes, data, and
+                  technology so that what gets implemented can actually be used,
+                  managed, and sustained.
+                </p>
+                <p>
+                  That is the part of the work I find most rewarding: helping
+                  organizations move from having technology to having technology
+                  that genuinely works for them.
+                </p>
+              </div>
+              </div>
+            </details>
           </div>
           <aside className="contact-side">
             <Image

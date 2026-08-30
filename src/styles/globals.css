@@ -2518,43 +2518,6 @@ code {
 }
 
 
-/* Impact figures. The numbers were already on the page, buried inside
-   paragraphs; pulled out they do the work of several of them. A description
-   list because that is what this is: terms and their definitions. */
-.section--impact { padding-block: var(--s5) var(--s6); }
-
-.impact-strip {
-  border-top: 1px solid var(--slate-300);
-  border-bottom: 1px solid var(--slate-300);
-  display: grid;
-  gap: var(--s4) var(--s5);
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin: 0;
-  padding-block: var(--s4);
-}
-
-.impact-strip dt {
-  font-size: clamp(1.5rem, 2.4vw, 2rem);
-  font-weight: 750;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
-}
-
-.impact-strip dd {
-  color: var(--slate-600);
-  font-size: var(--text-2xs);
-  line-height: 1.4;
-  margin: 6px 0 0;
-}
-
-@media (max-width: 899px) {
-  .impact-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
-@media (max-width: 479px) {
-  .impact-strip { grid-template-columns: minmax(0, 1fr); }
-}
-
 /* Reach: the map and the places it marks, side by side. */
 .reach-grid {
   align-items: center;
@@ -2585,4 +2548,67 @@ code {
 
 @media (max-width: 899px) {
   .reach-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+
+/* "Read more" on the About page.
+   A native <details>, so it opens with no JavaScript at all: it works before
+   hydration, with scripting disabled, and Ctrl+F still finds the collapsed
+   text in browsers that support hidden-content search. */
+.read-more { margin-top: var(--s4); }
+
+.read-more > summary {
+  color: var(--teal-700);
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  list-style: none;
+  padding: 4px 0;
+}
+
+/* Safari draws its own triangle unless both of these are set. */
+.read-more > summary::-webkit-details-marker { display: none; }
+.read-more > summary::marker { content: ""; }
+
+.read-more > summary:hover { text-decoration: underline; }
+
+.read-more > summary:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--teal-700);
+  outline-offset: 3px;
+}
+
+.read-more > summary::after {
+  content: "";
+  border-bottom: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  display: inline-block;
+  height: 6px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  transform: rotate(45deg);
+  transition: transform 0.16s ease;
+  width: 6px;
+}
+
+.read-more[open] > summary::after { transform: rotate(-135deg); margin-bottom: -2px; }
+
+.read-more-close { display: none; }
+.read-more[open] .read-more-open { display: none; }
+.read-more[open] .read-more-close { display: inline; }
+
+/* .prose is a grid, and its gap is what spaces the paragraphs. Moving them
+   inside a wrapper took them out of that grid, so the wrapper has to carry
+   the same rhythm. */
+.read-more-body {
+  display: grid;
+  gap: var(--s5);
+  margin-top: var(--s5);
+}
+
+.read-more-body > h2 { margin-bottom: calc(var(--s3) - var(--s5)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .read-more > summary::after { transition: none; }
 }
