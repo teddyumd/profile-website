@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     "Learn about Tewodros Hailegeberel's career across public-sector transformation, digital systems, geospatial intelligence, digital health, infrastructure, government, and technology in Africa and the United States.",
 };
 
+const effectiveQuestions = [
+  "Will this technology work reliably where connectivity, power, or technical capacity may be limited?",
+  "Are we solving the underlying problem, or simply digitizing an inefficient process?",
+  "Can the organization operate and maintain the system with its existing people and resources?",
+  "Who will own, manage, and improve the data and technology after the project ends?",
+];
+
 const credentials = [
   "MA Geospatial Information Sciences, University of Maryland (2010)",
   "BSc Environmental Science, University of Maryland (2007)",
@@ -107,6 +114,70 @@ export default function AboutPage() {
               use technology to fill in the missing pieces so communities,
               institutions, and the data between them can finally connect.
             </p>
+            <h2>In Practice</h2>
+            <p>
+              My perspective was shaped by building systems from the ground up.
+              Founding eAdrasha in Addis Ababa, a location-based start-up
+              focused on mapping places that were often missing from
+              conventional maps, reinforced an important lesson for me:
+              technology works best when it reflects the realities of the
+              people and institutions expected to use it.
+            </p>
+            <p>
+              I carried that same approach into my work at USAID/Ethiopia,
+              where I served as Senior Digital Health Advisor and supported a
+              $63 million national digital health portfolio. My role required
+              working across government, health facilities, implementing
+              partners, and development partners to strengthen the systems,
+              governance, and coordination behind digital health investments.
+            </p>
+            <p>
+              More recently, I have advised public utilities and major
+              infrastructure programs on enterprise GIS, systems integration,
+              and digital transformation strategy.
+            </p>
+            <p>
+              If you are working on systems that need to move from concept to
+              sustainable implementation, I would be glad to connect.
+            </p>
+            <h2>How I Work</h2>
+            <div className="why-effective">
+              <p className="why-effective-lead">
+                I enjoy working at the intersection of strategy, technology, and
+                implementation.
+              </p>
+              <p>
+                Having managed donor-funded programs, advised public institutions
+                and utilities, and built my own geospatial business, I have seen
+                a consistent pattern: technology projects rarely struggle because
+                of technology alone. They struggle when the solution does not fit
+                the institution, the operating environment, or the people
+                expected to use and sustain it.
+              </p>
+              <p>
+                That experience has taught me to ask practical questions early:
+              </p>
+              <ul className="why-effective-questions">
+                {effectiveQuestions.map((q) => (
+                  <li key={q}>{q}</li>
+                ))}
+              </ul>
+              <p>
+                These questions may seem simple, but answering them well can save
+                organizations significant time, money, and frustration.
+              </p>
+              <p>
+                My role is not simply to recommend or build technology. I work
+                with teams to connect strategy, people, processes, data, and
+                technology so that what gets implemented can actually be used,
+                managed, and sustained.
+              </p>
+              <p>
+                That is the part of the work I find most rewarding: helping
+                organizations move from having technology to having technology
+                that genuinely works for them.
+              </p>
+            </div>
           </div>
           <aside className="contact-side">
             <Image

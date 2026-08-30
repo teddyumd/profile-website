@@ -1995,7 +1995,7 @@ main {
   display: none;
 }
 
-@media (min-width: 1340px) {
+@media (min-width: 1620px) {
   .section-rail {
     /* The rail is fixed, so it passes over both light and dark sections.
        Its own panel keeps the text legible regardless of what is behind it. */
@@ -2021,11 +2021,12 @@ main {
   }
 }
 
-/* Between 1180px and the full rail's breakpoint there is no room for the
-   labels, but there is still room in the gutter for the markers. The reader
-   keeps the position cue and the section links; only the words are dropped.
-   Below 1180px the gutter closes entirely and the rail stays hidden. */
-@media (min-width: 1180px) and (max-width: 1339px) {
+/* The labelled rail is 196px wide and lives in the left gutter, so it only
+   clears the 1180px content column at about 1620px. Below that it used to
+   render on top of the text. Between 1180px and 1620px the markers alone
+   fit, which keeps the position cue without covering a word; below 1180px
+   the gutter closes entirely and the rail stays hidden. */
+@media (min-width: 1180px) and (max-width: 1619px) {
   .section-rail {
     display: grid;
     gap: 10px;
@@ -2514,4 +2515,74 @@ code {
 
 @media (max-width: 599px) {
   .schedule-block { align-items: flex-start; flex-direction: column; }
+}
+
+
+/* Impact figures. The numbers were already on the page, buried inside
+   paragraphs; pulled out they do the work of several of them. A description
+   list because that is what this is: terms and their definitions. */
+.section--impact { padding-block: var(--s5) var(--s6); }
+
+.impact-strip {
+  border-top: 1px solid var(--slate-300);
+  border-bottom: 1px solid var(--slate-300);
+  display: grid;
+  gap: var(--s4) var(--s5);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding-block: var(--s4);
+}
+
+.impact-strip dt {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.impact-strip dd {
+  color: var(--slate-600);
+  font-size: var(--text-2xs);
+  line-height: 1.4;
+  margin: 6px 0 0;
+}
+
+@media (max-width: 899px) {
+  .impact-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 479px) {
+  .impact-strip { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Reach: the map and the places it marks, side by side. */
+.reach-grid {
+  align-items: center;
+  display: grid;
+  gap: var(--s6);
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+}
+
+.reach-map { margin: 0; }
+.reach-map svg { display: block; height: auto; width: 100%; }
+.reach-map-base { fill: rgba(16, 24, 27, 0.09); stroke: var(--paper-50); stroke-width: 0.75; }
+.reach-map-country { fill: var(--teal-800); }
+.reach-map-ring { fill: none; stroke: var(--teal-700); stroke-width: 1.5; opacity: 0.55; }
+
+.reach-list {
+  display: grid;
+  gap: var(--s3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reach-list li { display: grid; gap: 2px; }
+.reach-list strong { font-size: var(--text-xs); }
+.reach-list span { color: var(--slate-600); font-size: var(--text-2xs); line-height: 1.45; }
+
+#reach .experience-references { margin-top: var(--s6); }
+
+@media (max-width: 899px) {
+  .reach-grid { grid-template-columns: minmax(0, 1fr); }
 }

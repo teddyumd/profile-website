@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { CaseStudyPreview } from "@/components/content/CaseStudyPreview";
+import { ReachMap } from "@/components/content/ReachMap";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TextLink } from "@/components/ui/TextLink";
 import { site } from "@/content/site";
@@ -8,6 +9,7 @@ import { SectionRail } from "@/components/layout/SectionRail";
 import { gisCapabilities, techStack } from "@/content/gis";
 import { products } from "@/content/products";
 import { caseStudies } from "@/content/work/caseStudies";
+import { mappedCountries } from "@/content/worldMap";
 
 const capabilityLead = [
   "I get brought in when a digital project gets stuck between big strategic goals and the practical realities of making it work.",
@@ -41,13 +43,6 @@ const capabilities = [
   },
 ];
 
-const effectiveQuestions = [
-  "Will this technology work reliably where connectivity, power, or technical capacity may be limited?",
-  "Are we solving the underlying problem, or simply digitizing an inefficient process?",
-  "Can the organization operate and maintain the system with its existing people and resources?",
-  "Who will own, manage, and improve the data and technology after the project ends?",
-];
-
 const experienceReferences = [
   { organization: "USAID", work: "Advising on digital health, data, GIS, and national technology programs." },
   { organization: "Adam Smith International", work: "Helping modernize enterprise GIS and utility information systems." },
@@ -72,13 +67,21 @@ const engagementAreas = [
   "Speaking & collaboration",
 ];
 
+const impactFigures = [
+  { value: "20+ yrs", label: "Across government, utilities, and health systems" },
+  { value: "$63M", label: "National digital health portfolio advised" },
+  { value: "8,000+", label: "Health posts reached by supported services" },
+  { value: "25,000", label: "Users in six months at eAdrasha" },
+  { value: "40+", label: "People hired and led in Addis Ababa" },
+];
+
 const railSections = [
   { id: "welcome", label: "Welcome" },
   { id: "introduction", label: "Introduction" },
+  { id: "selected-work", label: "Selected Work" },
+  { id: "reach", label: "Reach" },
   { id: "expertise", label: "What I Do" },
   { id: "geospatial", label: "Geospatial Practice" },
-  { id: "institutions", label: "Institutional Experience" },
-  { id: "selected-work", label: "Selected Work" },
   { id: "point-of-view", label: "Point of View" },
   { id: "work-together", label: "Work Together" },
 ];
@@ -139,6 +142,19 @@ export default function Homepage() {
         </div>
       </section>
 
+      <section className="section section--impact" id="impact">
+        <div className="container">
+          <dl className="impact-strip">
+            {impactFigures.map((figure) => (
+              <div key={figure.label}>
+                <dt>{figure.value}</dt>
+                <dd>{figure.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       <section className="section intro-letter" id="introduction">
         <div className="container">
           <div className="prose">
@@ -153,31 +169,72 @@ export default function Homepage() {
               technology investments into practical, scalable systems that
               people can use, manage, and sustain.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section surface" id="selected-work">
+        <div className="container">
+          <div className="section-heading">
+            <Eyebrow>Selected Work</Eyebrow>
+            <h2 className="visually-hidden">Selected Work</h2>
             <p>
-              My perspective was shaped by building systems from the ground up.
-              Founding eAdrasha in Addis Ababa, a location-based start-up
-              focused on mapping places that were often missing from
-              conventional maps, reinforced an important lesson for me:
-              technology works best when it reflects the realities of the
-              people and institutions expected to use it.
+              The work below shows the range of my practice: national digital
+              transformation, utility modernization, and building a technology
+              company around a practical urban problem.
             </p>
-            <p>
-              I carried that same approach into my work at USAID/Ethiopia,
-              where I served as Senior Digital Health Advisor and supported a
-              $63 million national digital health portfolio. My role required
-              working across government, health facilities, implementing
-              partners, and development partners to strengthen the systems,
-              governance, and coordination behind digital health investments.
+          </div>
+          <div className="case-list">
+            {caseStudies
+              .filter((study) => study.featured)
+              .map((study) => (
+                <CaseStudyPreview key={study.slug} study={study} />
+              ))}
+          </div>
+          {/* The case studies above are advisory work. This points at the
+              two systems built hands-on, which live on the portfolio page. */}
+          <div className="built-strip">
+            <p className="built-strip-lead">
+              Alongside the advisory work, I build systems myself:
             </p>
-            <p>
-              More recently, I have advised public utilities and major
-              infrastructure programs on enterprise GIS, systems integration,
-              and digital transformation strategy.
-            </p>
-            <p>
-              If you are working on systems that need to move from concept to
-              sustainable implementation, I would be glad to connect.
-            </p>
+            <ul className="built-strip-list">
+              {products.map((product) => (
+                <li key={product.slug}>
+                  <a href="/work#products">{product.name}</a>
+                  <span>{product.tagline}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <TextLink href="/work">View Full Portfolio</TextLink>
+        </div>
+      </section>
+
+      <section className="section" id="reach" aria-labelledby="reach-heading">
+        <div className="container">
+          <div className="section-heading">
+            <Eyebrow>Reach</Eyebrow>
+            <h2 id="reach-heading">Where the Work Has Been.</h2>
+          </div>
+          <div className="reach-grid">
+            <ReachMap />
+            <ol className="reach-list">
+              {mappedCountries.map((country) => (
+                <li key={country.code}>
+                  <strong>{country.name}</strong>
+                  <span>{country.note}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="experience-references" aria-label="Selected institutional experience">
+            {experienceReferences.map((reference) => (
+              <article key={reference.organization}>
+                <strong>{reference.organization}</strong>
+                <p>{reference.work}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -205,45 +262,6 @@ export default function Homepage() {
                 <p>{capability.body}</p>
               </article>
             ))}
-          </div>
-
-          <div className="why-effective">
-            <h3>Why I Enjoy This Work</h3>
-            <p className="why-effective-lead">
-              I enjoy working at the intersection of strategy, technology, and
-              implementation.
-            </p>
-            <p>
-              Having managed donor-funded programs, advised public institutions
-              and utilities, and built my own geospatial business, I have seen
-              a consistent pattern: technology projects rarely struggle because
-              of technology alone. They struggle when the solution does not fit
-              the institution, the operating environment, or the people
-              expected to use and sustain it.
-            </p>
-            <p>
-              That experience has taught me to ask practical questions early:
-            </p>
-            <ul className="why-effective-questions">
-              {effectiveQuestions.map((q) => (
-                <li key={q}>{q}</li>
-              ))}
-            </ul>
-            <p>
-              These questions may seem simple, but answering them well can save
-              organizations significant time, money, and frustration.
-            </p>
-            <p>
-              My role is not simply to recommend or build technology. I work
-              with teams to connect strategy, people, processes, data, and
-              technology so that what gets implemented can actually be used,
-              managed, and sustained.
-            </p>
-            <p>
-              That is the part of the work I find most rewarding: helping
-              organizations move from having technology to having technology
-              that genuinely works for them.
-            </p>
           </div>
         </div>
       </section>
@@ -285,61 +303,6 @@ export default function Homepage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="section" id="institutions">
-        <div className="container experience-band">
-          <div className="section-heading">
-            <Eyebrow>Institutional Experience</Eyebrow>
-            <h2>Turning Technical Knowledge into Public-Sector Solutions.</h2>
-          </div>
-          <div className="experience-references" aria-label="Selected institutional experience">
-            {experienceReferences.map((reference) => (
-              <article key={reference.organization}>
-                <strong>{reference.organization}</strong>
-                <p>{reference.work}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section surface" id="selected-work">
-        <div className="container">
-          <div className="section-heading">
-            <Eyebrow>Selected Work</Eyebrow>
-            <h2 className="visually-hidden">Selected Work</h2>
-            <p>
-              The work below shows the range of my practice: national digital
-              transformation, utility modernization, and building a technology
-              company around a practical urban problem.
-            </p>
-          </div>
-          <div className="case-list">
-            {caseStudies
-              .filter((study) => study.featured)
-              .map((study) => (
-                <CaseStudyPreview key={study.slug} study={study} />
-              ))}
-          </div>
-          {/* The case studies above are advisory work. This points at the
-              two systems built hands-on, which live on the portfolio page. */}
-          <div className="built-strip">
-            <p className="built-strip-lead">
-              Alongside the advisory work, I build systems myself:
-            </p>
-            <ul className="built-strip-list">
-              {products.map((product) => (
-                <li key={product.slug}>
-                  <a href="/work#products">{product.name}</a>
-                  <span>{product.tagline}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <TextLink href="/work">View Full Portfolio</TextLink>
         </div>
       </section>
 
