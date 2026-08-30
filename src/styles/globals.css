@@ -2612,3 +2612,28 @@ code {
 @media (prefers-reduced-motion: reduce) {
   .read-more > summary::after { transition: none; }
 }
+
+
+/* "Read more" inside a case-study card. The card's own dividers and rhythm
+   have to be reapplied inside the panel, because the blocks are no longer
+   siblings of the challenge block. */
+.case-preview-more {
+  border-top: 1px solid rgba(16, 42, 67, 0.1);
+  margin-top: 0;
+  padding-top: var(--s3);
+}
+
+.case-preview-more .read-more-body {
+  gap: var(--s3);
+  margin-top: var(--s3);
+}
+
+.case-preview-more .read-more-body > div {
+  display: grid;
+  gap: var(--s1);
+}
+
+.case-preview-more .read-more-body > div + div {
+  border-top: 1px solid rgba(16, 42, 67, 0.1);
+  padding-top: var(--s3);
+}

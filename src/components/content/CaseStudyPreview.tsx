@@ -44,24 +44,36 @@ export function CaseStudyPreview({
         </div>
         <Heading>{study.title}</Heading>
         <div className="case-preview-story">
+          {/* The challenge stays open: a card that shows nothing but a
+              control gives the reader no reason to use it. Role and impact
+              are what "Read more" reveals. A native <details>, so it needs
+              no JavaScript to open. */}
           <div>
             <p className="case-preview-label">Challenge / Achievement</p>
             <p>{study.summary}</p>
           </div>
-          <div>
-            <p className="case-preview-label">Role</p>
-            <p>{study.role}</p>
-          </div>
-          <div>
-            <p className="case-preview-label">Key Business &amp; Technical Impact</p>
-            <ul className="impact-list">
-              {study.impact.map((item) => (
-                <li key={item.label}>
-                  <strong>{item.label}:</strong> {item.detail}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <details className="read-more case-preview-more">
+            <summary>
+              <span className="read-more-open">Read more.</span>
+              <span className="read-more-close">Show less.</span>
+            </summary>
+            <div className="read-more-body">
+              <div>
+                <p className="case-preview-label">Role</p>
+                <p>{study.role}</p>
+              </div>
+              <div>
+                <p className="case-preview-label">Key Business &amp; Technical Impact</p>
+                <ul className="impact-list">
+                  {study.impact.map((item) => (
+                    <li key={item.label}>
+                      <strong>{item.label}:</strong> {item.detail}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
         <TextLink href={`/work/${study.slug}`}>View More about This Experience</TextLink>
       </div>
