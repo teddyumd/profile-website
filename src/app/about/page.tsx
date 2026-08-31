@@ -133,18 +133,18 @@ export default function AboutPage() {
                 I carried that same approach into my work at USAID/Ethiopia,
                 where I served as Senior Digital Health Advisor and supported a
                 $63 million national digital health portfolio. My role required
-                working across government, health facilities, implementing
+                working across government agencies, health care facilities, implementing
                 partners, and development partners to strengthen the systems,
                 governance, and coordination behind digital health investments.
               </p>
               <p>
-                More recently, I have advised public utilities and major
-                infrastructure programs on enterprise GIS, systems integration,
-                and digital transformation strategy.
+                More recently, I have advised public utilities on major
+                infrastructure modernization programs, covering enterprise GIS,
+                systems integration, and digital transformation strategy.
               </p>
               <p>
                 If you are working on systems that need to move from concept to
-                sustainable implementation, I would be glad to connect.
+                sustainable implementation, let&rsquo;s connect.
               </p>
               <h2>How I Work</h2>
               <div className="why-effective">

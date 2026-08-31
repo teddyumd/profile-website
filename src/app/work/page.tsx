@@ -21,7 +21,7 @@ export default function WorkPage() {
           <h1>Featuring Selected Work</h1>
           <div className="hero-story">
             <p>
-              Below is a selection of the work I was proud of, and I hope it will
+              Below is a selection of work I&apos;m proud of, and I hope it will
               give you the clearest picture I can give of the problems I take
               on, the scale I work at, and what I bring to them.
             </p>
@@ -55,11 +55,11 @@ export default function WorkPage() {
         <div className="container">
           <div className="section-heading">
             <Eyebrow>Products</Eyebrow>
-            <h2 id="products-heading">Some Side Projects I Worked On.</h2>
+            <h2 id="products-heading">Projects Awaiting a Launch Date.</h2>
             <p>
               The work above is advisory. These two I designed and built
-              myself, from the spatial database up. Both run; neither has
-              launched yet.
+              myself, from the spatial database up. Both are built and running;
+              neither has launched yet.
             </p>
           </div>
 

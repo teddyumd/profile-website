@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { CaseStudyPreview } from "@/components/content/CaseStudyPreview";
 import { ReachMap } from "@/components/content/ReachMap";
@@ -12,7 +13,7 @@ import { caseStudies } from "@/content/work/caseStudies";
 import { mappedCountries } from "@/content/worldMap";
 
 const capabilityLead = [
-  "I get brought in when a digital project gets stuck between big strategic goals and the practical realities of making it work.",
+  "I’m brought in when a digital project gets stuck between big strategic goals and the practical realities of making it work.",
   "Usually, the hard part isn\u2019t picking the software. It\u2019s connecting the human pieces: helping leaders figure out what actually needs to be built, how it will work on the ground, what it will take to roll out, and how the local team will keep it running after the experts leave.",
 ];
 
@@ -114,8 +115,8 @@ export default function Homepage() {
             <h1>Welcome</h1>
             <p className="intro">
               I created this space to give you a better idea of who I am, my
-              experiences, my skills, and a few key pieces of work I want to
-              highlight for your reference. A r&eacute;sum&eacute; can only list
+              experiences, my skills, and a few selected pieces of work for
+              your reference. A r&eacute;sum&eacute; can only list
               job descriptions, but I hope this site gives you a clear picture
               of how I think and operate on the ground.
             </p>
@@ -179,7 +180,7 @@ export default function Homepage() {
             <ul className="built-strip-list">
               {products.map((product) => (
                 <li key={product.slug}>
-                  <a href="/work#products">{product.name}</a>
+                  <Link href="/work#products">{product.name}</Link>
                   <span>{product.tagline}</span>
                 </li>
               ))}

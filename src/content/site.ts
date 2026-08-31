@@ -3,7 +3,7 @@ export const site = {
   title: "Transforming Public Systems Through Data, Digital Technology & Geospatial Intelligence",
   // Reads under the name in the hero. A promise, not a keyword list.
   descriptor:
-    "I use data and systems thinking to help institutions build technology they can run themselves.",
+    "I help institutions build technology they can own, run, and grow themselves.",
   location: "Addis Ababa, Ethiopia",
   languages: "English and Amharic",
   cta: "Discuss an Opportunity",
