@@ -1030,6 +1030,14 @@ main {
   padding-block: clamp(var(--s7), 5vw, var(--s9));
 }
 
+/* The hero's exploration links. Three inline-flex text links in a row need an
+   explicit gap and a wrap, or they collide on a narrow card. */
+.case-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s5);
+}
+
 .case-hero-grid {
   display: grid;
   gap: var(--s8);

@@ -49,6 +49,10 @@ export type CaseStudy = {
   supportingDomains?: string[];
   impact: { label: string; detail: string }[];
   lesson: string;
+  /** The working thing itself, where a case study has one to visit. */
+  liveUrl?: string;
+  /** Public source, where the work is open. */
+  repoUrl?: string;
   featured: boolean;
   visual?: {
     type: "image" | "text" | "diagram";

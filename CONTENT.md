@@ -800,7 +800,89 @@ If the repository is a fork or derivative:
 
 ---
 
-# 13. Technology Lab
+# 13. Case Study 05 — Ethiopia Business Register
+
+## Slug
+
+`ethiopia-business-register`
+
+## Card label
+
+**OPEN DATA · ETHIOPIA**
+
+## Card title
+
+**Reading an Economy From Its Own Business Register**
+
+## Card summary
+
+**Ethiopia’s commercial register records 345,369 businesses, and almost everything written about it counts businesses. Counting the capital those businesses declared describes a different country: trade is half the register and a sixth of the money.**
+
+## Deck
+
+**An independent analysis of Ethiopia’s 2016 commercial register, published as an interactive explorer — rebuilding a truncated source file, repairing its classification, and releasing only aggregates that disclose nothing about any individual business.**
+
+## Positioning
+
+This is:
+
+**Independent open-data analysis of a public government dataset.**
+
+Do not describe it as:
+
+- commissioned work
+- a government or ministry product
+- an official statistical release
+- work carried out for a client
+
+There was no client and no engagement. It is independent portfolio work built on a public file.
+
+## Approved facts
+
+These are drawn from the published dataset and its documented repair history. Do not alter
+them to fit a layout, and do not add figures that are not in this list.
+
+- 345,369 registered businesses in the register
+- 295,066 (85.4%) are sole proprietorships
+- sole-proprietor share by sector: retail 89.8%, services 89.8%, hospitality 85.9%,
+  manufacturing 62.4%, agriculture 50.8%, construction 35.7%, extractive 17.8%
+- logistics and transport: 14.4% of businesses, 58.2% of registered capital
+- trade: 52.2% of businesses, 16.5% of registered capital
+- total registered capital: 2.13 trillion birr
+- the working copy was found truncated to 226,453 of 345,369 records (65%) and rebuilt
+- 39,858 records (11.5%) had been classified as macro sector “Other”; that bucket was removed
+- 34,905 category spellings corrected at source
+- capital statistics withheld for any group below five businesses
+
+## Integrity notes
+
+Do not:
+
+- present the findings as official statistics about the Ethiopian economy
+- imply the register is current; it is the 2016 file
+- describe registered capital as revenue, assets, or company value — it is the figure a
+  business declared at registration and is never revised afterwards
+- publish any figure derived from fewer than five businesses
+
+## Key lesson
+
+> **Most of this was not visualization. It was establishing that the file said what it appeared to say — and a third of it was missing before anything had been drawn.**
+
+## Links
+
+- Live project: `https://teddyumd.github.io/Ethiopia_Trade_Business_Data/`
+- Source: `https://github.com/teddyumd/Ethiopia_Trade_Business_Data`
+
+## Technical details
+
+- Python standard library for the data pipeline
+- D3.js, vendored rather than loaded from a CDN
+- static site, no backend
+- self-hosted Familjen Grotesk
+
+---
+
+# 14. Technology Lab
 
 ## Route
 
@@ -884,7 +966,7 @@ Do not feature as a flagship project unless it is upgraded into a clear data pro
 
 ---
 
-# 14. Methodology / How I Work
+# 15. Methodology / How I Work
 
 ## Section eyebrow
 
@@ -970,7 +1052,7 @@ Keywords:
 
 ---
 
-# 15. Career Snapshot
+# 16. Career Snapshot
 
 ## Section eyebrow
 
@@ -1044,7 +1126,7 @@ Description:
 
 ---
 
-# 16. About Page
+# 17. About Page
 
 ## Metadata title
 
@@ -1104,7 +1186,7 @@ Addis Ababa, Ethiopia
 
 ---
 
-# 17. Opportunity / Contact Page
+# 18. Opportunity / Contact Page
 
 ## Route
 
@@ -1197,7 +1279,7 @@ Use only if still accurate when launched.
 
 ---
 
-# 18. Resume Page
+# 19. Resume Page
 
 ## Route
 
@@ -1239,7 +1321,7 @@ This should be created separately and aligned with the website.
 
 ---
 
-# 19. Perspective Section
+# 20. Perspective Section
 
 Do not launch until at least three strong pieces exist.
 
@@ -1309,7 +1391,7 @@ Do not publish placeholders.
 
 ---
 
-# 20. Footer
+# 21. Footer
 
 Recommended structure:
 
@@ -1341,7 +1423,7 @@ Do not add agency-style legal language unless necessary.
 
 ---
 
-# 21. Social / External Links
+# 22. Social / External Links
 
 ## LinkedIn
 
@@ -1371,7 +1453,7 @@ Do not invent one.
 
 ---
 
-# 22. GitHub Profile Alignment
+# 23. GitHub Profile Alignment
 
 Before prominently linking GitHub, update if possible:
 
@@ -1413,7 +1495,7 @@ Do not claim these GitHub changes are complete unless they have actually been ma
 
 ---
 
-# 23. Image Asset Manifest
+# 24. Image Asset Manifest
 
 The site quality depends heavily on authentic visual material.
 
@@ -1495,7 +1577,7 @@ Examples:
 
 ---
 
-# 24. Open Graph / Social Card Content
+# 25. Open Graph / Social Card Content
 
 Default card:
 
@@ -1521,7 +1603,7 @@ Do not create a cluttered résumé-style social card.
 
 ---
 
-# 25. “Currently” Module
+# 26. “Currently” Module
 
 Optional homepage/About module.
 
@@ -1541,7 +1623,7 @@ If it becomes outdated, remove the module rather than leaving stale content.
 
 ---
 
-# 26. Testimonials / Endorsements
+# 27. Testimonials / Endorsements
 
 Do not launch with generic testimonials.
 
@@ -1568,7 +1650,7 @@ One strong, specific testimonial is preferable to six vague quotes.
 
 ---
 
-# 27. Institutional Logos
+# 28. Institutional Logos
 
 Do not automatically display employer/client logos.
 
@@ -1599,7 +1681,7 @@ Never use a “Trusted By” headline.
 
 ---
 
-# 28. Expertise Keywords for Search / Metadata
+# 29. Expertise Keywords for Search / Metadata
 
 Use naturally in appropriate content.
 
@@ -1638,7 +1720,7 @@ Do not keyword-stuff visible copy.
 
 ---
 
-# 29. Tone Examples
+# 30. Tone Examples
 
 ## Preferred
 
@@ -1670,7 +1752,7 @@ Do not keyword-stuff visible copy.
 
 ---
 
-# 30. Content Length Guidance
+# 31. Content Length Guidance
 
 ## Hero
 
@@ -1709,7 +1791,7 @@ Do not inflate content to hit word counts.
 
 ---
 
-# 31. Launch Content Priority
+# 32. Launch Content Priority
 
 ## Must have before launch
 
@@ -1748,7 +1830,7 @@ Do not inflate content to hit word counts.
 
 ---
 
-# 32. Missing / Verification Checklist
+# 33. Missing / Verification Checklist
 
 These items are intentionally unresolved.
 
@@ -1814,7 +1896,7 @@ Do not silently guess.
 
 ---
 
-# 33. Recommended LinkedIn Positioning
+# 34. Recommended LinkedIn Positioning
 
 This file does not authorize editing LinkedIn automatically.
 
@@ -1830,7 +1912,7 @@ Do not overload the headline with tools.
 
 ---
 
-# 34. Preferred Professional Biography — Short
+# 35. Preferred Professional Biography — Short
 
 Use for speaker bios, cards, or external profiles when needed.
 
@@ -1838,7 +1920,7 @@ Use for speaker bios, cards, or external profiles when needed.
 
 ---
 
-# 35. Preferred Professional Biography — Medium
+# 36. Preferred Professional Biography — Medium
 
 **Tewodros Hailegeberel is an Addis Ababa-based public-sector transformation, digital systems, and geospatial adviser with more than 15 years of experience across Africa and the United States. His work spans government, international development, digital health, infrastructure, enterprise GIS, data governance, and technology entrepreneurship.**
 
@@ -1848,7 +1930,7 @@ Use for speaker bios, cards, or external profiles when needed.
 
 ---
 
-# 36. Primary Brand Statement
+# 37. Primary Brand Statement
 
 Use internally to test all copy:
 
@@ -1858,7 +1940,7 @@ This does not necessarily need to appear verbatim on the site.
 
 ---
 
-# 37. Final Editorial Test
+# 38. Final Editorial Test
 
 Before publishing any page, ask:
 
@@ -1892,7 +1974,7 @@ The user should eventually understand why a conversation with Tewodros would be 
 
 ---
 
-# 38. Final Governing Content Principle
+# 39. Final Governing Content Principle
 
 > **Do not tell the story of a GIS expert who accumulated broader responsibilities. Tell the story of a public-sector transformation leader whose unusual advantage is that he understands both institutions and the technical systems inside them.**
 

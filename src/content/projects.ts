@@ -4,6 +4,14 @@ export const githubProfile = "https://github.com/teddyumd";
 
 export const projects: Project[] = [
   {
+    name: "Ethiopia_Trade_Business_Data",
+    title: "Ethiopia\u2019s Business Register, Made Readable",
+    problem:
+      "The record of every formally registered business in Ethiopia is public and close to unusable \u2014 a ninth of the records filed under \u201cOther\u201d, and a third of the country missing from the copy I started with.",
+    built:
+      "An interactive explorer of 345,369 businesses, built on a repaired dataset that publishes aggregates only.",
+  },
+  {
     name: "Gefersa_Resv_Water_Quality_GEE",
     title: "Reservoir Water-Quality Monitoring",
     problem:

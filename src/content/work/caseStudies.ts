@@ -304,6 +304,79 @@ export const caseStudies: CaseStudy[] = [
     ],
     featured: false,
   },
+  {
+    slug: "ethiopia-business-register",
+    number: "05",
+    label: "Open Data / Ethiopia",
+    title: "Reading an Economy From Its Own Business Register",
+    metaTitle: "Ethiopia\u2019s Business Register, Repaired and Visualized",
+    metaDescription:
+      "An independent analysis of Ethiopia\u2019s 2016 commercial register \u2014 345,369 businesses \u2014 repaired, reclassified, and published as an interactive explorer.",
+    summary:
+      "Ethiopia\u2019s commercial register records 345,369 businesses, and almost everything written about it counts businesses. Counting the capital those businesses declared describes a different country: trade is half the register and a sixth of the money.",
+    deck:
+      "An independent analysis of Ethiopia\u2019s 2016 commercial register, published as an interactive explorer \u2014 rebuilding a truncated source file, repairing its classification, and releasing only aggregates that disclose nothing about any individual business.",
+    context:
+      "The register is the closest thing Ethiopia has to a census of formal enterprise: every registered business, its legal form, its sector, where it registered, and the capital it declared. The file is public. It is also close to unreadable as it stands \u2014 a classification that drops a ninth of the records into an unlabelled bucket, spelling variants that split real categories in two, and, in the working copy I started from, a third of the country simply absent.",
+    approach:
+      "I rebuilt the enriched dataset from the cleaned source, reconstructed the taxonomy from the records that had survived classification, corrected labels at source rather than papering over them in the interface, and built the explorer as a static site with no backend \u2014 so what is published is a folder of files anyone can audit.",
+    enabled:
+      "An explorer where a reader can filter 345,369 businesses by region and sector, drill from region to zone to woreda and from sector down to specialty, and read every chart as a table of figures rather than only as a picture.",
+    role: "Independent project \u2014 analysis, data engineering, and interface.",
+    facts: [
+      { label: "Role", value: "Independent \u2014 analysis, pipeline, and interface" },
+      { label: "Source", value: "Ethiopia commercial register, 2016" },
+      { label: "Scale", value: "345,369 registered businesses" },
+      { label: "Built with", value: "Python, D3.js, static site" },
+      { label: "Status", value: "Published, open source" },
+    ],
+    challengeHeading: "The Challenge",
+    challenge:
+      "The dataset had to be repaired before it could be read at all. The enriched copy I began with held 226,453 of the register\u2019s 345,369 records \u2014 a third of the country missing, with nothing in the file to announce it. The classification assigned 39,858 records, 11.5% of the register, to a macro sector called \u201cOther\u201d, which is not a category so much as a place categories go to disappear. Spelling variants split real groups apart: 34,905 records carried a category name differing from its own siblings by a typo. And the raw register carries owner names, manager names and telephone numbers, so the pipeline had to be built such that none of it could reach a published figure.",
+    roleHeading: "My Role",
+    roleDescription:
+      "All of it: sourcing, repair, classification, analysis, visual design, and the disclosure and accessibility rules the published site is held to. The constraint I set at the outset was that no number on the site should be traceable back to an individual business.",
+    contributions: [
+      "rebuilt the enriched dataset after finding the working copy truncated to 65% of the register, and verified the rebuild against a known correction count",
+      "reconstructed the four-tier taxonomy \u2014 sector, macro sector, business type, specialty \u2014 from the records that had survived classification",
+      "eliminated the \u201cOther\u201d macro sector by naming what was inside it: agriculture, construction, and extractive industry",
+      "corrected 34,905 category spellings at source rather than at the presentation layer, with a CSV audit trail for every change",
+      "withheld capital statistics for any group below five businesses, because a median taken over a handful of businesses is those businesses\u2019 own data",
+      "wrote a privacy test that fails the build if a personal field name, a telephone-shaped value, or a small-group statistic reaches the published file",
+      "built twelve interactive charts in D3, each with a keyboard path, a spoken description, and a table of its own figures",
+      "validated the colour palette for colour-blind separation rather than choosing it by eye, and removed colour from one chart once the evidence showed seven categories could not be told apart",
+    ],
+    supportingDomains: [
+      "open data",
+      "data quality and repair",
+      "statistical disclosure control",
+      "taxonomy design",
+      "information design",
+      "accessibility",
+    ],
+    lesson:
+      "Most of this was not visualization. It was establishing that the file said what it appeared to say \u2014 and a third of it was missing before anything had been drawn.",
+    impact: [
+      {
+        label: "85.4% Owned by One Person",
+        detail:
+          "295,066 of the registered businesses are sole proprietorships, and the share falls as capital requirements rise \u2014 from 89.8% of retail to 17.8% of extractive industry. Informality is not a flat national condition; it tracks what a sector costs to enter.",
+      },
+      {
+        label: "58% of Capital in One Sector",
+        detail:
+          "Logistics and transport is one business in seven and 58.2% of all registered capital, while trade is half the register and 16.5% of it. Counting businesses and counting money describe two different economies, and most policy counts businesses.",
+      },
+      {
+        label: "Disclosure Control by Default",
+        detail:
+          "Capital statistics are withheld for any group below five businesses \u2014 a rule that caught five region-sector cells, one of them a single business whose declared capital would otherwise have been published.",
+      },
+    ],
+    liveUrl: "https://teddyumd.github.io/Ethiopia_Trade_Business_Data/",
+    repoUrl: "https://github.com/teddyumd/Ethiopia_Trade_Business_Data",
+    featured: false,
+  },
 ];
 
 export function getCaseStudy(slug: string) {
