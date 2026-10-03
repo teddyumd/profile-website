@@ -26,9 +26,10 @@ export default function WorkPage() {
               on, the scale I work at, and what I bring to them.
             </p>
             <p>
-              They span four very different settings: a national health
+              They span five very different settings: a national health
               network, an electric utility, a mapping company I built from
-              scratch, and a county inspection unit. On the surface, they look
+              scratch, a county inspection unit, and a public business
+              register. On the surface, they look
               completely unrelated. In
               practice, they faced the exact same challenge: data trapped in
               systems that couldn&rsquo;t communicate, organizations pulling in

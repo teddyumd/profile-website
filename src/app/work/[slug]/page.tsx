@@ -59,7 +59,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             <p className="eyebrow">{study.label}</p>
             <h1>{study.title}</h1>
             <p>{study.deck}</p>
-            <div className="case-hero-links">
+            <div className="link-row">
               <TextLink href="/work">Back to Portfolio</TextLink>
               {study.liveUrl ? (
                 <TextLink href={study.liveUrl} external>

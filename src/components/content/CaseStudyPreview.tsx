@@ -75,7 +75,14 @@ export function CaseStudyPreview({
             </div>
           </details>
         </div>
-        <TextLink href={`/work/${study.slug}`}>View More about This Experience</TextLink>
+        <div className="link-row">
+          <TextLink href={`/work/${study.slug}`}>View More about This Experience</TextLink>
+          {study.liveUrl ? (
+            <TextLink href={study.liveUrl} external>
+              View the live project
+            </TextLink>
+          ) : null}
+        </div>
       </div>
     </article>
   );
