@@ -60,5 +60,6 @@ export const projects: Project[] = [
     built:
       "A one-page site with sample pages and where to find the book, in Addis Ababa or on Amazon, published to GitHub Pages on every push.",
     liveUrl: "https://teddyumd.github.io/ethiopia-in-line-art/",
+    hideRepo: true,
   },
 ];

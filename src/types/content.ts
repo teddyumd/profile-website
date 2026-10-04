@@ -70,6 +70,8 @@ export type Project = {
   built: string;
   /** The working thing itself, where the project is deployed. */
   liveUrl?: string;
+  /** Leaves the GitHub repo off the card; the title links to liveUrl instead. */
+  hideRepo?: boolean;
 };
 
 export type Product = {

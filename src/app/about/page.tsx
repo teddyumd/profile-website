@@ -222,15 +222,25 @@ export default function AboutPage() {
             {projects.map((project) => (
               <article className="project-card" key={project.name}>
                 <h3>
-                  <a href={`${githubProfile}/${project.name}`} rel="noreferrer" target="_blank">
+                  <a
+                    href={
+                      project.hideRepo && project.liveUrl
+                        ? project.liveUrl
+                        : `${githubProfile}/${project.name}`
+                    }
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     {project.title}
                   </a>
                 </h3>
                 <p className="project-problem">{project.problem}</p>
                 <p className="project-built">{project.built}</p>
-                <p className="project-repo">
-                  <code>{project.name}</code>
-                </p>
+                {project.hideRepo ? null : (
+                  <p className="project-repo">
+                    <code>{project.name}</code>
+                  </p>
+                )}
                 {project.liveUrl ? (
                   <p>
                     <TextLink href={project.liveUrl} external>
