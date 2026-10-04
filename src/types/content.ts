@@ -68,6 +68,8 @@ export type Project = {
   title: string;
   problem: string;
   built: string;
+  /** The working thing itself, where the project is deployed. */
+  liveUrl?: string;
 };
 
 export type Product = {

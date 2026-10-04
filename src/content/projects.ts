@@ -10,6 +10,7 @@ export const projects: Project[] = [
       "The record of every formally registered business in Ethiopia is public and close to unusable \u2014 a ninth of the records filed under \u201cOther\u201d, and a third of the country missing from the copy I started with.",
     built:
       "An interactive explorer of 345,369 businesses, built on a repaired dataset that publishes aggregates only.",
+    liveUrl: "https://teddyumd.github.io/Ethiopia_Trade_Business_Data/",
   },
   {
     name: "Gefersa_Resv_Water_Quality_GEE",
@@ -50,5 +51,14 @@ export const projects: Project[] = [
       "Small property operations need real record-keeping but cannot justify enterprise systems.",
     built:
       "A working management system built entirely on Google Apps Script.",
+  },
+  {
+    name: "ethiopia-in-line-art",
+    title: "Ethiopia in Line Art",
+    problem:
+      "My coloring book of Ethiopian heritage, landscapes and everyday life needed one place that shows the pages and says where to buy it.",
+    built:
+      "A one-page site with sample pages and where to find the book, in Addis Ababa or on Amazon, published to GitHub Pages on every push.",
+    liveUrl: "https://teddyumd.github.io/ethiopia-in-line-art/",
   },
 ];

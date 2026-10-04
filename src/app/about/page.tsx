@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
+import { TextLink } from "@/components/ui/TextLink";
 import { site } from "@/content/site";
 import { projects, githubProfile } from "@/content/projects";
 import { absoluteUrl } from "@/lib/siteUrl";
@@ -230,6 +231,13 @@ export default function AboutPage() {
                 <p className="project-repo">
                   <code>{project.name}</code>
                 </p>
+                {project.liveUrl ? (
+                  <p>
+                    <TextLink href={project.liveUrl} external>
+                      See it live
+                    </TextLink>
+                  </p>
+                ) : null}
               </article>
             ))}
           </div>
