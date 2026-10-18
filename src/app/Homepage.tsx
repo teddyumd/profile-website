@@ -200,7 +200,7 @@ export default function Homepage() {
           <div className="reach-grid">
             {/* Plain anchor, not next/link: the career map is a static file
                 under /public, so Next has no route to navigate to. */}
-            <a className="reach-map-link" href="/life-in-layers/">
+            <a className="reach-map-link" href="/life-in-layers">
               <ReachMap />
               <span className="reach-map-cue">
                 Explore the interactive career map

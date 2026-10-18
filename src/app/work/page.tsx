@@ -65,7 +65,7 @@ export default function WorkPage() {
             </p>
           </div>
           {/* Static file under /public, so a plain anchor rather than next/link. */}
-          <a className="button" href="/life-in-layers/">
+          <a className="button" href="/life-in-layers">
             <span>Open the Career Map</span>
             <span className="arrow" aria-hidden="true">
               &rarr;

@@ -5,7 +5,7 @@ export const navigation: NavigationItem[] = [
   { label: "Expertise", href: "/#expertise" },
   { label: "About", href: "/about" },
   { label: "Resume", href: "/resume" },
-  { label: "Career Map", href: "/life-in-layers/", external: true },
+  { label: "Career Map", href: "/life-in-layers", external: true },
 ];
 
 export const footerNavigation: NavigationItem[] = [
