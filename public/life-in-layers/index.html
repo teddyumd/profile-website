@@ -59,6 +59,50 @@ footer{position:relative;padding:0 clamp(22px,4.1vw,70px) clamp(22px,4vw,48px)}.
 a.brand{text-decoration:none;color:inherit;transition:opacity .16s ease}
 a.brand:hover .brandsub{color:var(--teal)}
 a.brand:focus-visible{outline:2px solid var(--teal);outline-offset:4px;border-radius:6px}
+
+/* --- fit the story column to the available height -------------------------
+   The headline was sized from viewport WIDTH alone (clamp(38px,4.6vw,72px)),
+   so a wide but short window produced a 610px story column inside a 474px
+   main. It overflowed in both directions: the year label collided with the
+   header brand, and the stat block collided with the footer. The source has
+   a (max-height:700px) step for this, but a 791px-tall window falls just
+   above it, which is exactly where the overprinting showed up.
+   Sizing from whichever axis is scarcer removes the step and the collision. */
+@media (min-width:701px){
+ main{min-height:0}
+ .story{margin-top:0}
+ .story h1{font-size:clamp(32px,min(4.6vw,7.2vh),72px);margin-bottom:clamp(12px,2.4vh,25px)}
+ .story .description{margin-bottom:clamp(8px,1.6vh,18px);font-size:clamp(13px,min(1.12vw,1.95vh),17px);line-height:clamp(1.45,0.21vh,1.8)}
+ .stat{margin-top:clamp(12px,2.6vh,32px);padding-top:clamp(8px,1.4vh,16px)}
+ /* Chapters carry different amounts of prose, and the longest ones still
+    exceed a short viewport even after the type responds to height. Rather
+    than clip or overprint, the column scrolls on its own. The bar only
+    appears when it is actually needed. */
+ .story{max-height:100%;display:flex;flex-direction:column;min-height:0}
+ #storyInner{max-height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(178,212,225,.28) transparent;padding-right:10px}
+ #storyInner::-webkit-scrollbar{width:6px}
+ #storyInner::-webkit-scrollbar-thumb{background:rgba(178,212,225,.28);border-radius:3px}
+ #storyInner::-webkit-scrollbar-track{background:transparent}
+
+ /* --- keep the right rail out of the footer ------------------------------
+    .rightRail is absolutely positioned at top:22% with no lower bound, so
+    its height is purely content-driven. On a short window it ran 110px past
+    the end of main: the coordinates printed over the PAUSED hint and the
+    legend printed over the timeline labels. The source hides both blocks
+    below 700px tall; between there and about 900px they were shown with
+    nowhere to go. Sizing the inset from viewport height keeps them placed
+    instead of hidden. */
+ .rightRail{top:clamp(84px,18vh,180px);gap:clamp(8px,1.4vh,14px)}
+ #localMap{height:clamp(92px,14.5vh,173px)}
+ .geoInset{padding:clamp(8px,1.2vh,12px)}
+ .railLegend{padding:clamp(6px,1vh,9px);gap:clamp(4px,.8vh,7px)}
+
+ /* --- the timeline had one column too few -------------------------------
+    There are 13 chapters and the grid declared repeat(12, ...), so the last
+    one wrapped onto a second row under the first: "Next / What's next" sat
+    below "Home / Addis roots" as if it were a separate control. */
+ .timeline{grid-template-columns:repeat(13,minmax(0,1fr))}
+}
 </style>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
