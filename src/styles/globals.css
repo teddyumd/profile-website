@@ -2646,3 +2646,33 @@ code {
   border-top: 1px solid rgba(16, 42, 67, 0.1);
   padding-top: var(--s3);
 }
+
+
+/* The static world map doubles as the entry point to the interactive one. */
+.reach-map-link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.reach-map-cue {
+  align-items: center;
+  color: var(--teal-700);
+  display: inline-flex;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  gap: 8px;
+  margin-top: var(--s3);
+}
+
+.reach-map-link:hover .reach-map-cue { text-decoration: underline; }
+
+.reach-map-link:hover .reach-map-base { fill: rgba(16, 24, 27, 0.14); }
+
+.reach-map-link:focus-visible {
+  border-radius: 10px;
+  outline: 2px solid var(--teal-700);
+  outline-offset: 6px;
+}
+
+.reach-map-base { transition: fill 0.16s ease; }

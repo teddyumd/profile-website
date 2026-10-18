@@ -6,6 +6,12 @@ export type Metric = {
 export type NavigationItem = {
   label: string;
   href: string;
+  /**
+   * True for a destination Next does not route: a static file under /public.
+   * Those must render as a plain anchor, because next/link would try a
+   * client-side navigation to a route that does not exist.
+   */
+  external?: boolean;
 };
 
 export type ExpertiseArea = {

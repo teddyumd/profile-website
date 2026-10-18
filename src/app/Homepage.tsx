@@ -198,7 +198,15 @@ export default function Homepage() {
             <h2 id="reach-heading">Where the Work Has Been.</h2>
           </div>
           <div className="reach-grid">
-            <ReachMap />
+            {/* Plain anchor, not next/link: the career map is a static file
+                under /public, so Next has no route to navigate to. */}
+            <a className="reach-map-link" href="/life-in-layers/">
+              <ReachMap />
+              <span className="reach-map-cue">
+                Explore the interactive career map
+                <span aria-hidden="true">→</span>
+              </span>
+            </a>
             <ol className="reach-list">
               {mappedCountries.map((country) => (
                 <li key={country.code}>

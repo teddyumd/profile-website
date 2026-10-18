@@ -94,11 +94,17 @@ export function SiteHeader() {
           <span className="brand-title">{site.title}</span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
-          {navigation.map((item) => (
-            <Link key={item.href} href={item.href} aria-current={isActive(item.href) ? "page" : undefined}>
-              {item.label}
-            </Link>
-          ))}
+          {navigation.map((item) =>
+            item.external ? (
+              <a key={item.href} href={item.href}>
+                {item.label}
+              </a>
+            ) : (
+              <Link key={item.href} href={item.href} aria-current={isActive(item.href) ? "page" : undefined}>
+                {item.label}
+              </Link>
+            ),
+          )}
           <Button className="nav-cta" href="/contact">
             {site.cta}
           </Button>
@@ -122,11 +128,17 @@ export function SiteHeader() {
         aria-hidden={!open}
       >
         <nav className="container mobile-nav-inner" aria-label="Mobile navigation">
-          {navigation.map((item) => (
-            <Link key={item.href} href={item.href} aria-current={isActive(item.href) ? "page" : undefined} onClick={closeMenu}>
-              {item.label}
-            </Link>
-          ))}
+          {navigation.map((item) =>
+            item.external ? (
+              <a key={item.href} href={item.href} onClick={closeMenu}>
+                {item.label}
+              </a>
+            ) : (
+              <Link key={item.href} href={item.href} aria-current={isActive(item.href) ? "page" : undefined} onClick={closeMenu}>
+                {item.label}
+              </Link>
+            ),
+          )}
           <Link className="button" href="/contact" aria-current={pathname === "/contact" ? "page" : undefined} onClick={closeMenu}>
             <span>{site.cta}</span>
             <span aria-hidden="true">→</span>

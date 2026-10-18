@@ -52,6 +52,28 @@ export default function WorkPage() {
         </div>
       </section>
 
+      <section className="section" id="career-map" aria-labelledby="career-map-heading">
+        <div className="container">
+          <div className="section-heading">
+            <Eyebrow>Interactive</Eyebrow>
+            <h2 id="career-map-heading">A Life in Layers.</h2>
+            <p>
+              Twenty years of work, told as a map rather than a list: thirteen
+              chapters that move between Addis Ababa, Maryland, Washington DC,
+              Malawi, Haiti, and Burundi, each one sitting on the ground where
+              it happened.
+            </p>
+          </div>
+          {/* Static file under /public, so a plain anchor rather than next/link. */}
+          <a className="button" href="/life-in-layers/">
+            <span>Open the Career Map</span>
+            <span className="arrow" aria-hidden="true">
+              &rarr;
+            </span>
+          </a>
+        </div>
+      </section>
+
       <section className="section ink-surface" id="products" aria-labelledby="products-heading">
         <div className="container">
           <div className="section-heading">
